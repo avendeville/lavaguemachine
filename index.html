@@ -79,14 +79,38 @@
       margin-top: 70px;
     }
 
-    /* SIGNE MINIMALISTE INSPIRÉ DU MOTIF — VERSION FINE */
+    /* MOTIF MINIMALISTE (chevron haut + ligne + chevron bas) */
+    .motif-up, .motif-down {
+      width: 0;
+      height: 0;
+      border-left: 12px solid transparent;
+      border-right: 12px solid transparent;
+      opacity: 0.12;
+    }
+
+    .motif-up {
+      border-bottom: 14px solid var(--brun);
+    }
+
+    .motif-down {
+      border-top: 14px solid var(--brun);
+    }
+
+    .motif-line {
+      width: 3px;
+      height: 32px;
+      background-color: var(--brun);
+      opacity: 0.12;
+      margin: 4px 0;
+    }
+
+    /* MOTIF EN FILIGRANE DERRIÈRE LE TITRE */
     .title-wrapper {
       position: relative;
       display: inline-block;
       padding-top: 90px;
     }
 
-    /* Chevron haut */
     .title-wrapper::before {
       content: "";
       position: absolute;
@@ -100,7 +124,6 @@
       opacity: 0.12;
     }
 
-    /* Chevron bas */
     .title-wrapper::after {
       content: "";
       position: absolute;
@@ -114,7 +137,6 @@
       opacity: 0.12;
     }
 
-    /* Ligne centrale */
     .title-line {
       position: absolute;
       top: -10px;
@@ -126,16 +148,23 @@
       opacity: 0.12;
     }
 
-    /* LIEN D’ENTRÉE DANS LE SYSTÈME */
-    .enter {
-      margin-top: 25px;
-      font-size: 18px;
-      color: var(--brun);
+    /* MOTIF CLIQUABLE POUR ENTRER DANS LE SYSTÈME */
+    .enter-sign {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 40px;
+      margin: 40px auto 0 auto;
       text-decoration: none;
     }
 
-    .enter:hover {
-      opacity: 0.7;
+    .enter-sign div {
+      opacity: 0.35;
+      transition: opacity 0.2s ease;
+    }
+
+    .enter-sign:hover div {
+      opacity: 0.6;
     }
 
   </style>
@@ -143,7 +172,14 @@
 
 <body>
 
-  <!-- SIGNE VENDEVILLIEN EN FILIGRANE -->
+  <!-- MOTIF EN HAUT DE PAGE (PORTE PRINCIPALE) -->
+  <a class="enter-sign" href="#">
+    <div class="motif-up"></div>
+    <div class="motif-line"></div>
+    <div class="motif-down"></div>
+  </a>
+
+  <!-- TITRE + MOTIF EN FILIGRANE -->
   <div class="title-wrapper">
     <div class="title-line"></div>
     <h1>Agnès Vendeville</h1>
@@ -158,9 +194,14 @@
       Le système vendevillien révèle les mécaniques invisibles qui structurent les institutions
       et propose une architecture de lucidité pour les réparer.
     </p>
-
-    <a class="enter" href="#">Entrer dans le système →</a>
   </div>
+
+  <!-- MOTIF POUR ENTRER DANS LE SYSTÈME (DEUXIÈME OCCURRENCE) -->
+  <a class="enter-sign" href="#">
+    <div class="motif-up"></div>
+    <div class="motif-line"></div>
+    <div class="motif-down"></div>
+  </a>
 
   <div class="section">
     <h2>Les trois portes d’entrée</h2>
