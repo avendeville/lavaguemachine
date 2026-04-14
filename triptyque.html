@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Le triptyque vendevillien</title>
+  <style>
+    :root {
+      --noir: #111111;
+      --beige: #F4E9D8;
+      --brun: #7A4E2D;
+    }
+
+    body {
+      font-family: "Georgia", serif;
+      background-color: var(--beige);
+      color: var(--noir);
+      margin: 0;
+      padding: 40px 20px;
+      max-width: 700px;
+      line-height: 1.6;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Motif d’entrée */
+    .motif-entry {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      opacity: 0.55;
+      margin: 0 auto 40px auto;
+    }
+
+    .motif-entry .chevron {
+      width: 32px;
+      height: 32px;
+      border-left: 4px solid var(--brun);
+      border-bottom: 4px solid var(--brun);
+    }
+
+    .motif-entry .chevron.up {
+      transform: rotate(180deg);
+    }
+
+    .motif-entry .line {
+      width: 4px;
+      height: 70px;
+      background-color: var(--brun);
+      margin: 6px 0;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 50px;
+      color: var(--noir);
+    }
+
+    h2 {
+      font-size: 22px;
+      margin-top: 40px;
+      color: var(--brun);
+    }
+
+    .retour {
+      margin-top: 60px;
+      text-align: center;
+    }
+
+    a {
+      color: var(--brun);
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Motif d’entrée -->
+  <div class="motif-entry">
+    <div class="chevron up"></div>
+    <div class="line"></div>
+    <div class="chevron"></div>
+  </div>
+
+  <h1>Le triptyque vendevillien</h1>
+
+  <h2>Surfer la Vague Machine — Livre I</h2>
+  <p>
+    Le premier livre explore l’expérience institutionnelle depuis l’intérieur : la vague, le mouvement, 
+    les dynamiques qui emportent, déstabilisent ou révèlent. 
+    Il ouvre la porte d’entrée du système par l’expérience vécue.
+  </p>
+
+  <h2>La Vague Machine — Livre II</h2>
+  <p>
+    Le second livre expose la mécanique : les structures, les forces, les rouages qui organisent 
+    les institutions. Il constitue le cœur conceptuel du système vendevillien.
+  </p>
+
+  <h2>Inventer les institutions — Livre III</h2>
+  <p>
+    Le troisième livre projette : il propose une architecture de transformation, une manière de 
+    reconstruire les institutions à partir de la lucidité structurelle. 
+    C’est la dimension prospective du triptyque.
+  </p>
+
+  <div class="retour">
+    <a href="index.html">← Retour à l’accueil</a>
+  </div>
+
+</body>
