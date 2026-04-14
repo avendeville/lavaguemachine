@@ -7,6 +7,7 @@
   <title>La Vague Machine — Système vendevillien</title>
 
   <style>
+
     :root {
       --sable: #F4E9D8;
       --noir: #111111;
@@ -75,63 +76,71 @@
       margin-top: 70px;
     }
 
-    /* Motif d’origine (haut de page) */
-    .motif-original {
+    /* MOTIF D’ORIGINE (taille 1) */
+    .motif {
       display: flex;
       flex-direction: column;
       align-items: center;
-      opacity: 0.35;
+      opacity: 0.45;
       margin: 0 auto 40px auto;
     }
 
-    .motif-original .chevron {
+    .motif .chevron {
       width: 32px;
       height: 32px;
       border-left: 3px solid var(--brun);
       border-bottom: 3px solid var(--brun);
     }
 
-    .motif-original .chevron.up {
+    .motif .chevron.up {
       transform: rotate(180deg);
     }
 
-    .motif-original .line {
+    .motif .line {
       width: 3px;
       height: 70px;
       background-color: var(--brun);
       margin: 6px 0;
     }
 
-    /* Motif d’entrée (plus petit, centré, cliquable) */
+    /* MOTIF D’ENTRÉE (taille 0.5) */
     .motif-entry {
+      transform: scale(0.5);
+      margin: 50px auto;
+      opacity: 0.45;
+      text-decoration: none;
       display: flex;
       flex-direction: column;
       align-items: center;
-      opacity: 0.35;
-      margin: 40px auto;
-      transform: scale(0.65);
-      text-decoration: none;
     }
 
     .motif-entry:hover {
-      opacity: 0.6;
+      opacity: 0.7;
     }
+
+    /* MOTIFS DES PORTES (taille 0.33) */
+    .motif-small {
+      transform: scale(0.33);
+      margin: 20px 0 10px 0;
+      opacity: 0.45;
+    }
+
   </style>
 </head>
 
 <body>
 
-  <!-- Motif en haut de page -->
-  <div class="motif-original">
+  <!-- MOTIF PRINCIPAL (taille 1) -->
+  <div class="motif">
     <div class="chevron up"></div>
     <div class="line"></div>
     <div class="chevron"></div>
   </div>
 
-  <!-- Titre -->
+  <!-- TITRE -->
   <h1>Agnès Vendeville</h1>
 
-  <!-- Hero -->
+  <!-- HERO -->
   <div class="hero">
     <p>Lire ce qui agit.</p>
     <p>Stabiliser ce qui dérive.</p>
@@ -143,23 +152,44 @@
     </p>
   </div>
 
-  <!-- Motif = porte d’entrée dans le système -->
+  <!-- MOTIF D’ENTRÉE (taille 0.5) -->
   <a href="#" class="motif-entry">
     <div class="chevron up"></div>
     <div class="line"></div>
     <div class="chevron"></div>
   </a>
 
-  <!-- Sections -->
+  <!-- PORTES D’ENTRÉE -->
   <div class="section">
     <h2>Les trois portes d’entrée</h2>
-    <div class="list">
-      <div><strong>Lire les mécaniques</strong> — voir ce qui agit.</div>
-      <div><strong>Stabiliser le langage</strong> — fixer les formes.</div>
-      <div><strong>Réparer l’institution</strong> — restaurer les organes.</div>
+
+    <!-- Porte 1 -->
+    <div class="motif motif-small">
+      <div class="chevron up"></div>
+      <div class="line"></div>
+      <div class="chevron"></div>
     </div>
+    <div><strong>Lire les mécaniques</strong> — voir ce qui agit.</div>
+
+    <!-- Porte 2 -->
+    <div class="motif motif-small">
+      <div class="chevron up"></div>
+      <div class="line"></div>
+      <div class="chevron"></div>
+    </div>
+    <div><strong>Stabiliser le langage</strong> — fixer les formes.</div>
+
+    <!-- Porte 3 -->
+    <div class="motif motif-small">
+      <div class="chevron up"></div>
+      <div class="line"></div>
+      <div class="chevron"></div>
+    </div>
+    <div><strong>Réparer l’institution</strong> — restaurer les organes.</div>
+
   </div>
 
+  <!-- COSMOLOGIE -->
   <div class="section">
     <h2>Cosmologie vendevillienne</h2>
     <p>
@@ -169,6 +199,7 @@
     </p>
   </div>
 
+  <!-- ARCHITECTURE -->
   <div class="section">
     <h2>Architecture du système</h2>
     <p>Les cinq organes du système :</p>
@@ -181,6 +212,7 @@
     </div>
   </div>
 
+  <!-- IDENTITÉ -->
   <div class="section">
     <h2>Identité d’autrice</h2>
     <p>
