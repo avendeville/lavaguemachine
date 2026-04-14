@@ -131,55 +131,6 @@
     .motif-entry:hover {
       opacity: 1;
     }
-/* MOTIF ΛV — pour la page d’accueil */
-.motif-lav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 18px;
-  margin: 0 auto 40px auto;
-  opacity: 0.55;
-}
-
-/* Base commune */
-.motif-lav .v-shape {
-  position: relative;
-  width: 32px;
-  height: 32px;
-}
-
-/* Segment gauche */
-.motif-lav .v-shape::before,
-.motif-lav .v-shape::after {
-  content: "";
-  position: absolute;
-  width: 4px;
-  height: 36px;
-  background-color: var(--brun);
-  bottom: 0;
-  transform-origin: bottom center;
-}
-
-/* Λ (V inversé) */
-.motif-lav .v-inverse::before {
-  left: 0;
-  transform: rotate(60deg);
-}
-.motif-lav .v-inverse::after {
-  right: 0;
-  transform: rotate(-60deg);
-}
-
-/* V normal */
-.motif-lav .v-normal::before {
-  left: 0;
-  transform: rotate(-60deg);
-}
-.motif-lav .v-normal::after {
-  right: 0;
-  transform: rotate(60deg);
-}
-
     
   </style>
 </head>
@@ -187,9 +138,10 @@
 <body>
 
   <!-- MOTIF PRINCIPAL -->
-  <div class="motif-lav">
-  <div class="v-inverse"></div>
-  <div class="v-normal"></div>
+  <div class="motif">
+  <div class="chevron up"></div>
+  <div class="line"></div>
+  <div class="chevron"></div>
 </div>
 
   <!-- TITRE -->
