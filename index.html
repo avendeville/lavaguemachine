@@ -3,14 +3,180 @@
 <head>
   <meta charset="UTF-8">
   <meta name="robots" content="noindex, nofollow">
-  <title>La Vague Machine</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Vague Machine — Système vendevillien</title>
+
   <style>
-    body { font-family: Arial, sans-serif; margin: 60px; line-height: 1.6; }
-    h1 { font-size: 32px; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 60px auto;
+      max-width: 800px;
+      line-height: 1.6;
+      color: #111;
+      position: relative;
+    }
+
+    /* Ligne verticale vendevillienne */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 40px;
+      width: 3px;
+      height: 100vh;
+      background-color: #0A1A2F; /* bleu nuit vendevillien */
+      opacity: 0.25;
+    }
+
+    h1, h2 {
+      font-weight: normal;
+      margin-top: 40px;
+      color: #0A1A2F; /* accent vendevillien */
+    }
+
+    h1 {
+      font-size: 34px;
+    }
+
+    h2 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .hero {
+      margin-top: 40px;
+      margin-bottom: 60px;
+    }
+
+    .hero p {
+      margin: 6px 0;
+      font-size: 20px;
+    }
+
+    .section {
+      margin-bottom: 50px;
+    }
+
+    .list {
+      margin-top: 10px;
+    }
+
+    .list div {
+      margin-bottom: 8px;
+    }
+
+    .legal {
+      font-size: 14px;
+      color: #555;
+      margin-top: 60px;
+    }
+
+    /* Triangle-ligne-triangle en filigrane derrière le titre */
+    .title-wrapper {
+      position: relative;
+      display: inline-block;
+      padding-top: 60px; /* espace pour le filigrane */
+    }
+
+    .title-wrapper::before {
+      content: "";
+      position: absolute;
+      top: -40px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 0;
+      border-left: 22px solid transparent;
+      border-right: 22px solid transparent;
+      border-top: 26px solid #0A1A2F;
+      opacity: 0.08;
+    }
+
+    .title-wrapper::after {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 0;
+      border-left: 22px solid transparent;
+      border-right: 22px solid transparent;
+      border-bottom: 26px solid #0A1A2F;
+      opacity: 0.08;
+    }
+
+    .title-line {
+      position: absolute;
+      top: -5px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 3px;
+      height: 40px;
+      background-color: #0A1A2F;
+      opacity: 0.08;
+    }
   </style>
 </head>
+
 <body>
-  <h1>La Vague Machine</h1>
-  <p>Page d’accueil en construction.</p>
+
+  <!-- Signe vendevillien en filigrane -->
+  <div class="title-wrapper">
+    <div class="title-line"></div>
+    <h1>Agnès Vendeville</h1>
+  </div>
+
+  <div class="hero">
+    <p>Autrice identifiée auprès de la SACD et de l’INPI</p>
+    <p>Lire ce qui agit.</p>
+    <p>Stabiliser ce qui dérive.</p>
+    <p>Reconstruire ce qui s’effondre.</p>
+    <p style="margin-top:20px;">
+      Le système vendevillien révèle les mécaniques invisibles qui structurent les institutions et propose une architecture de lucidité pour les réparer.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Les trois portes d’entrée</h2>
+    <div class="list">
+      <div><strong>Lire les mécaniques</strong> — comprendre ce qui agit réellement dans les institutions.</div>
+      <div><strong>Stabiliser le langage</strong> — déplacer les catégories, clarifier les formes, neutraliser les dérives.</div>
+      <div><strong>Réparer l’institution</strong> — restaurer la cohérence, reconstruire les organes, stabiliser les systèmes humains.</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Cosmologie vendevillienne</h2>
+    <p>
+      Le système vendevillien lit les institutions à travers leurs mécaniques, leurs récits et leurs organes. 
+      Il agit non par la psychologie, mais par la structure. 
+      Il révèle ce qui se produit réellement, stabilise ce qui dérive et reconstruit ce qui s’effondre.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Architecture du système</h2>
+    <div class="list">
+      <div>Les mécaniques institutionnelles</div>
+      <div>La communication positive institutionnelle</div>
+      <div>Le pôle communication‑santé</div>
+      <div>Le lexique conceptuel</div>
+      <div>Les architectures institutionnelles</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Identité d’autrice</h2>
+    <p>
+      Agnès Vendeville — Autrice, systèmes institutionnels, architectures conceptuelles.  
+      Autrice identifiée auprès de la SACD et de l’INPI.
+    </p>
+  </div>
+
+  <div class="legal">
+    © Agnès Vendeville — Œuvre protégée par la SACD — Dépôts INPI des noms de méthodes — Usage professionnel, conceptuel, institutionnel.
+  </div>
+
 </body>
 </html>
