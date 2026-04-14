@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Les mécaniques institutionnelles — Système vendevillien</title>
+
+  <style>
+
+    :root {
+      --sable: #F4E9D8;
+      --noir: #111111;
+      --brun: #7A4E2D;
+    }
+
+    body {
+      background-color: var(--sable);
+      color: var(--noir);
+      font-family: Arial, sans-serif;
+      margin: 70px auto;
+      max-width: 780px;
+      line-height: 1.65;
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 40px;
+      width: 3px;
+      height: 100vh;
+      background-color: var(--brun);
+      opacity: 0.25;
+    }
+
+    h1, h2 {
+      font-weight: normal;
+      color: var(--brun);
+      margin-top: 40px;
+    }
+
+    h1 {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 22px;
+      margin-bottom: 12px;
+    }
+
+    .section {
+      margin-bottom: 60px;
+    }
+
+    .legal {
+      font-size: 14px;
+      color: var(--noir);
+      opacity: 0.7;
+      margin-top: 70px;
+    }
+
+    /* MOTIF PRINCIPAL */
+    .motif {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      opacity: 0.55;
+      margin: 0 auto 40px auto;
+    }
+
+    .motif .chevron {
+      width: 32px;
+      height: 32px;
+      border-left: 4px solid var(--brun);
+      border-bottom: 4px solid var(--brun);
+    }
+
+    .motif .chevron.up {
+      transform: rotate(180deg);
+    }
+
+    .motif .line {
+      width: 4px;
+      height: 70px;
+      background-color: var(--brun);
+      margin: 6px 0;
+    }
+
+    /* LIEN RETOUR */
+    .retour {
+      display: block;
+      margin-top: 20px;
+      font-size: 16px;
+      color: var(--brun);
+      text-decoration: none;
+      opacity: 0.8;
+    }
+
+    .retour:hover {
+      opacity: 1;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- MOTIF PRINCIPAL -->
+  <div class="motif">
+    <div class="chevron up"></div>
+    <div class="line"></div>
+    <div class="chevron"></div>
+  </div>
+
+  <!-- TITRE -->
+  <h1>Les mécaniques institutionnelles</h1>
+
+  <a href="index.html" class="retour">← Retour à l’accueil</a>
+
+  <!-- INTRO -->
+  <div class="section">
+    <p>
+      Les mécaniques institutionnelles constituent l’ossature du système vendevillien.
+      Elles révèlent les forces invisibles qui structurent, orientent et transforment
+      les organisations humaines.
+    </p>
+
+    <p>
+      Elles ne décrivent pas des comportements : elles décrivent des <strong>structures</strong>.
+      Elles n’analysent pas des intentions : elles analysent des <strong>mouvements systémiques</strong>.
+    </p>
+  </div>
+
+  <!-- LISTE DES 13 MÉCANIQUES (placeholder) -->
+  <div class="section">
+    <h2>Les 13 mécaniques</h2>
+
+    <p>
+      Cette page accueillera la présentation détaillée des treize mécaniques institutionnelles,
+      chacune structurée selon le format vendevillien :
+    </p>
+
+    <ul>
+      <li>Définition</li>
+      <li>Principe opératoire</li>
+      <li>Déclencheurs</li>
+      <li>Effets systémiques</li>
+      <li>Variantes</li>
+      <li>Articulations</li>
+      <li>Schéma conceptuel</li>
+    </ul>
+
+    <p>
+      Le contenu sera ajouté après le dépôt SACD / INPI.
+    </p>
+  </div>
+
+  <div class="legal">
+    © Agnès Vendeville — Système vendevillien.
+  </div>
+
+</body>
+</html>
