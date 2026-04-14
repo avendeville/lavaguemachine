@@ -131,7 +131,34 @@
     .motif-entry:hover {
       opacity: 1;
     }
+/* MOTIF ΛV — pour la page d’accueil uniquement */
+.motif-lav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px; /* léger espacement */
+  margin: 0 auto 40px auto;
+  opacity: 0.55;
+}
 
+/* Λ (V inversé) */
+.motif-lav .v-inverse {
+  width: 32px;
+  height: 32px;
+  border-left: 4px solid var(--brun);
+  border-right: 4px solid var(--brun);
+  transform: rotate(180deg);
+}
+
+/* V normal */
+.motif-lav .v-normal {
+  width: 32px;
+  height: 32px;
+  border-left: 4px solid var(--brun);
+  border-right: 4px solid var(--brun);
+}
+
+    
   </style>
 </head>
 
