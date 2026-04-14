@@ -154,35 +154,30 @@
   content: "";
   position: absolute;
   width: 4px;
-  height: 32px;
+  height: 36px;
   background-color: var(--brun);
-  top: 0;
+  bottom: 0;
   transform-origin: bottom center;
-}
-
-/* Segment droit */
-.motif-lav .v-shape::after {
-  right: 0;
 }
 
 /* Λ (V inversé) */
 .motif-lav .v-inverse::before {
   left: 0;
-  transform: rotate(-60deg);
+  transform: rotate(60deg);
 }
 .motif-lav .v-inverse::after {
   right: 0;
-  transform: rotate(60deg);
+  transform: rotate(-60deg);
 }
 
 /* V normal */
 .motif-lav .v-normal::before {
   left: 0;
-  transform: rotate(60deg);
+  transform: rotate(-60deg);
 }
 .motif-lav .v-normal::after {
   right: 0;
-  transform: rotate(-60deg);
+  transform: rotate(60deg);
 }
 
     
