@@ -79,91 +79,42 @@
       margin-top: 70px;
     }
 
-    /* MOTIF MINIMALISTE (chevron haut + ligne + chevron bas) */
-    .motif-up, .motif-down {
-      width: 0;
-      height: 0;
-      border-left: 12px solid transparent;
-      border-right: 12px solid transparent;
-      opacity: 0.12;
-    }
-
-    .motif-up {
-      border-bottom: 14px solid var(--brun);
-    }
-
-    .motif-down {
-      border-top: 14px solid var(--brun);
-    }
-
-    .motif-line {
-      width: 3px;
-      height: 32px;
-      background-color: var(--brun);
-      opacity: 0.12;
-      margin: 4px 0;
-    }
-
-    /* MOTIF EN FILIGRANE DERRIÈRE LE TITRE */
-    .title-wrapper {
-      position: relative;
-      display: inline-block;
-      padding-top: 90px;
-    }
-
-    .title-wrapper::before {
-      content: "";
-      position: absolute;
-      top: -60px;
-      left: 50%;
-      transform: translateX(-50%) rotate(180deg);
-      width: 32px;
-      height: 32px;
-      border-left: 3px solid var(--brun);
-      border-bottom: 3px solid var(--brun);
-      opacity: 0.12;
-    }
-
-    .title-wrapper::after {
-      content: "";
-      position: absolute;
-      top: 20px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 32px;
-      height: 32px;
-      border-left: 3px solid var(--brun);
-      border-bottom: 3px solid var(--brun);
-      opacity: 0.12;
-    }
-
-    .title-line {
-      position: absolute;
-      top: -10px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 3px;
-      height: 70px;
-      background-color: var(--brun);
-      opacity: 0.12;
-    }
-
-    /* MOTIF CLIQUABLE POUR ENTRER DANS LE SYSTÈME */
-    .enter-sign {
+    /* MOTIF ORIGINAL (celui déjà en haut de la page) */
+    .motif-original {
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: 40px;
-      margin: 40px auto 0 auto;
-      text-decoration: none;
+      opacity: 0.12;
+      margin: 0 auto 40px auto;
     }
 
-    .enter-sign div {
+    .motif-original .chevron {
+      width: 32px;
+      height: 32px;
+      border-left: 3px solid var(--brun);
+      border-bottom: 3px solid var(--brun);
+    }
+
+    .motif-original .chevron.up {
+      transform: rotate(180deg);
+    }
+
+    .motif-original .line {
+      width: 3px;
+      height: 70px;
+      background-color: var(--brun);
+      margin: 6px 0;
+    }
+
+    /* VERSION CLIQUABLE DU MOTIF POUR ENTRER DANS LE SYSTÈME */
+    .motif-link {
       opacity: 0.35;
       transition: opacity 0.2s ease;
+      text-decoration: none;
+      display: inline-block;
     }
 
-    .enter-sign:hover div {
+    .motif-link:hover {
       opacity: 0.6;
     }
 
@@ -172,16 +123,15 @@
 
 <body>
 
-  <!-- MOTIF EN HAUT DE PAGE (PORTE PRINCIPALE) -->
-  <a class="enter-sign" href="#">
-    <div class="motif-up"></div>
-    <div class="motif-line"></div>
-    <div class="motif-down"></div>
-  </a>
+  <!-- MOTIF ORIGINAL EN HAUT DE PAGE -->
+  <div class="motif-original">
+    <div class="chevron up"></div>
+    <div class="line"></div>
+    <div class="chevron"></div>
+  </div>
 
-  <!-- TITRE + MOTIF EN FILIGRANE -->
+  <!-- TITRE -->
   <div class="title-wrapper">
-    <div class="title-line"></div>
     <h1>Agnès Vendeville</h1>
   </div>
 
@@ -196,11 +146,13 @@
     </p>
   </div>
 
-  <!-- MOTIF POUR ENTRER DANS LE SYSTÈME (DEUXIÈME OCCURRENCE) -->
-  <a class="enter-sign" href="#">
-    <div class="motif-up"></div>
-    <div class="motif-line"></div>
-    <div class="motif-down"></div>
+  <!-- MOTIF ORIGINAL RÉUTILISÉ COMME PORTE D’ENTRÉE -->
+  <a href="#" class="motif-link">
+    <div class="motif-original">
+      <div class="chevron up"></div>
+      <div class="line"></div>
+      <div class="chevron"></div>
+    </div>
   </a>
 
   <div class="section">
