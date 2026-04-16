@@ -7,107 +7,142 @@
   <title>Architecture de la Vague Machine</title>
 
   <style>
-  :root {
-    --sable: #F4E9D8;
-    --noir: #111111;
-    --brun: #7A4E2D;
-  }
+    :root {
+      --sable: #F4E9D8;
+      --noir: #111111;
+      --brun: #7A4E2D;
+    }
 
-  body {
-    background-color: var(--sable);
-    color: var(--noir);
-    font-family: Arial, sans-serif;
-    margin: 70px auto;
-    max-width: 780px;
-    line-height: 1.65;
-    position: relative;
-  }
+    body {
+      background-color: var(--sable);
+      color: var(--noir);
+      font-family: Arial, sans-serif;
+      margin: 70px auto;
+      max-width: 780px;
+      line-height: 1.65;
+      position: relative;
+    }
 
-  body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 40px;
-    width: 3px;
-    height: 100vh;
-    background-color: var(--brun);
-    opacity: 0.25;
-  }
+   body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 40px;
+      width: 3px;
+      height: 100vh;
+      background-color: var(--brun);
+      opacity: 0.25;
+    }
 
-  h1, h2 {
-    font-weight: normal;
-    color: var(--brun);
-    margin-top: 40px;
-  }
+    h1, h2 {
+      font-weight: normal;
+      color: var(--brun);
+      margin-top: 40px;
+    }
 
-  h1 {
-    font-size: 34px;
-    margin-bottom: 10px;
-  }
+    h1 {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
 
-  h2 {
-    font-size: 22px;
-    margin-bottom: 12px;
-  }
+    h2 {
+      font-size: 22px;
+      margin-bottom: 12px;
+    }
 
-  p {
-    margin-top: 0;
-    margin-bottom: 6px;
-    line-height: 1.65;
-  }
+    .section {
+      margin-bottom: 60px;
+    }
 
-  .section {
-    margin-bottom: 60px;
-  }
+    .legal {
+      font-size: 14px;
+      color: var(--noir);
+      opacity: 0.7;
+      margin-top: 70px;
+    }
 
-  .legal {
-    font-size: 14px;
-    color: var(--noir);
-    opacity: 0.7;
-    margin-top: 70px;
-  }
+    /* MOTIF PRINCIPAL */
+    .motif {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      opacity: 0.55;
+      margin: 0 auto 40px auto;
+    }
 
-  /* MOTIF PRINCIPAL */
-  .motif {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    opacity: 0.55;
-    margin: 0 auto 40px auto;
-  }
+    .motif .chevron {
+      width: 32px;
+      height: 32px;
+      border-left: 4px solid var(--brun);
+      border-bottom: 4px solid var(--brun);
+    }
 
-  .motif .chevron {
-    width: 32px;
-    height: 32px;
-    border-left: 4px solid var(--brun);
-    border-bottom: 4px solid var(--brun);
-  }
+    .motif .chevron.up {
+      transform: rotate(180deg);
+    }
 
-  .motif .chevron.up {
-    transform: rotate(180deg);
-  }
+    .motif .line {
+      width: 4px;
+      height: 70px;
+      background-color: var(--brun);
+      margin: 6px 0;
+    }
 
-  .motif .line {
-    width: 4px;
-    height: 70px;
-    background-color: var(--brun);
-    margin: 6px 0;
-  }
+    /* LIEN RETOUR */
+    .retour {
+      display: block;
+      margin-top: 20px;
+      font-size: 16px;
+      color: var(--brun);
+      text-decoration: none;
+      opacity: 0.8;
+    }
 
-  /* LIEN RETOUR */
-  .retour {
-    display: block;
-    margin-top: 20px;
-    font-size: 16px;
-    color: var(--brun);
-    text-decoration: none;
-    opacity: 0.8;
-  }
+    .retour:hover {
+      opacity: 1;
+    }
 
-  .retour:hover {
-    opacity: 1;
-  }
-</style>
+    /* TITRES */
+h1, h2 {
+  font-weight: normal;
+  color: var(--brun);
+  margin-top: 40px;
+}
+
+h1 {
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+/* PARAGRAPHES */
+p {
+  margin-top: 0;
+  margin-bottom: 6px;
+  line-height: 1.65;
+}
+
+/* SECTIONS */
+.section {
+  margin-bottom: 40px;
+}
+
+/* HERO */
+.hero p {
+  margin: 6px 0;
+  font-size: 20px;
+}
+
+/* MOTIF (inchangé) */
+.motif, .motif-entry {
+  margin: 0 auto 40px auto;
+}
+  </style>
+</head>
   
 <body>
 
