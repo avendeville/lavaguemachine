@@ -99,58 +99,17 @@
       margin: 6px 0;
     }
 
-    /* MOTIF D’ENTRÉE — VERSION VISIBLE */
-    .motif-entry {
-      transform: scale(0.55);
-      margin: 40px auto 60px auto;
-      opacity: 0.85;
+    a {
+      color: var(--brun);
       text-decoration: none;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      opacity: 0.85;
     }
 
-    .motif-entry .chevron {
-      width: 32px;
-      height: 32px;
-      border-left: 4px solid var(--brun);
-      border-bottom: 4px solid var(--brun);
-    }
-
-    .motif-entry .chevron.up {
-      transform: rotate(180deg);
-    }
-
-    .motif-entry .line {
-      width: 4px;
-      height: 70px;
-      background-color: var(--brun);
-      margin: 6px 0;
-    }
-
-    .motif-entry:hover {
+    a:hover {
       opacity: 1;
+      text-decoration: underline;
     }
-    .triptyque-lien {
-  font-size: 17px;      /* légèrement plus grand (au lieu de 15px) */
-  margin-top: 8px;      /* un peu plus d’air */
-  opacity: 0.85;        /* plus lisible, mais toujours discret */
-}
 
-.triptyque-lien a {
-  color: var(--brun);
-  text-decoration: none;
-}
-  a {
-  color: var(--brun);
-  text-decoration: none;
-  opacity: 0.85;
-}
-
-a:hover {
-  opacity: 1;
-  text-decoration: underline;
-}
   </style>
 </head>
 
@@ -158,36 +117,43 @@ a:hover {
 
   <!-- MOTIF PRINCIPAL -->
   <div class="motif">
-  <div class="chevron up"></div>
-  <div class="line"></div>
-  <div class="chevron"></div>
-</div>
+    <div class="chevron up"></div>
+    <div class="line"></div>
+    <div class="chevron"></div>
+  </div>
 
   <!-- TITRE -->
   <h1>La Vague Machine institutionnelle</h1>
 
   <!-- HERO -->
   <div class="hero">
-        <p style="margin-top:0;">
+    <p>
       Lire les mécaniques. Stabiliser les formes. Réparer les structures.<br>
       Une architecture conceptuelle pour comprendre et restaurer les institutions.
     </p>
   </div>
 
   <!-- LES TROIS PORTES D’ENTRÉE -->
-<div class="section">
-  <h2>Les trois portes d’entrée</h2>
-<p>
-  Lire les mécaniques<br>
-  Comprendre ce qui agit réellement dans les institutions: les forces, les tensions, les mouvements systémiques.<br>
-  Stabiliser le langage<br>
-  Déplacer les catégories, clarifier les formes, neutraliser les dérives.<br>
-  La méthode de langage: Communication positive institutionnelle.<br>
-  Réparer l’institution<br>
-  Restaurer la cohérence, réguler les tensions, reconstruire les sturctures.<br>
-  L'organe de soin institutionnel: Pôle communicatio-santé.
-</p>
-</div>
+  <div class="section">
+    <h2>Les trois portes d’entrée</h2>
+
+    <p>
+      <strong>Lire les mécaniques</strong><br>
+      Comprendre ce qui agit réellement dans les institutions : les forces, les tensions, les mouvements systémiques.
+    </p>
+
+    <p>
+      <strong>Stabiliser le langage</strong><br>
+      Déplacer les catégories, clarifier les formes, neutraliser les dérives.<br>
+      La méthode de langage : <em>Communication positive institutionnelle</em>.
+    </p>
+
+    <p>
+      <strong>Réparer l’institution</strong><br>
+      Restaurer la cohérence, réguler les tensions, reconstruire les structures.<br>
+      L’organe de soin institutionnel : <em>Pôle communication‑santé</em>.
+    </p>
+  </div>
 
   <!-- COSMOLOGIE -->
   <div class="section">
@@ -195,48 +161,47 @@ a:hover {
     <p>
       Les institutions ne parlent pas : elles produisent.<br>
       La Vague Machine lit leurs mécaniques, stabilise leurs formes et reconstruit leurs structures.<br>
-      Elle situe chaque institution dans un ensemble plus vaste: forces, cycles, dérives, équilibres, effondrements.
+      Elle situe chaque institution dans un ensemble plus vaste : forces, cycles, dérives, équilibres, effondrements.
     </p>
   </div>
 
-  <!-- Explorer le système -->
+  <!-- EXPLORER LE SYSTÈME -->
   <div class="section">
-    <h2>
-      <a href="systeme.html" style="color: var(--brun); text-decoration:none;">Explorer le système
-  </a>
-</h2>
-    
+    <h2>Explorer le système</h2>
+
     <div class="list">
-  <div><a href="systeme.html" style="color: var(--brun); text-decoration:none;">Architecture de la Vague Machine</a></div>   
-  <div><a href="deployer.html" style="color: var(--brun); text-decoration:none;">Déployer la Vague Machine</a></div>
-  <div><a href="mecaniques.html" style="color: var(--brun); text-decoration:none;">Les mécaniques institutionnelles</a></div>
-  <div><a href="communication.html" style="color: var(--brun); text-decoration:none;">La communication positive institutionnelle</a></div>
-  <div><a href="pole.html" style="color: var(--brun); text-decoration:none;">Le pôle communication‑santé</a></div>
-  <div><a href="lexique.html" style="color: var(--brun); text-decoration:none;">Le lexique conceptuel</a></div>
-  <div><a href="architectures.html" style="color: var(--brun); text-decoration:none;">Les architectures institutionnelles</a></div>
-</div>
+      <div><a href="systeme.html">Architecture de la Vague Machine</a></div>
+      <div><a href="deployer.html">Déployer la Vague Machine</a></div>
+      <div><a href="mecaniques.html">Les mécaniques institutionnelles</a></div>
+      <div><a href="communication.html">Communication positive institutionnelle</a></div>
+      <div><a href="pole.html">Pôle communication‑santé</a></div>
+      <div><a href="lexique.html">Lexique conceptuel</a></div>
+      <div><a href="architectures.html">Architectures institutionnelles</a></div>
+      <div><a href="triptyque.html">Le triptyque vendevillien</a></div>
+    </div>
   </div>
 
   <!-- IDENTITÉ -->
   <div class="section">
-  <h2>Identité d’autrice</h2>
+    <h2>Identité d’autrice</h2>
 
-  <p style="margin:0;">Agnès Vendeville</p>
-<p style="margin:0;">Autrice — Systèmes institutionnels — Architectures conceptuelles</p>
+    <p style="margin:0;">Agnès Vendeville</p>
+    <p style="margin:0;">Autrice — Systèmes institutionnels — Architectures conceptuelles</p>
 
-<!-- espace discret -->
-<div style="height:8px;"></div>
+    <div style="height:8px;"></div>
 
-<p style="margin:0; font-size:0.9rem;">
-  <a href="triptyque.html" style="color: var(--brun); text-decoration:none;">
-  Triptyque : Surfer la Vague Machine, La Vague Machine, Inventer les institutions
-    </a>
-</p>
+    <p style="margin:0; font-size:0.9rem;">
+      <a href="triptyque.html">
+        Triptyque : Surfer la Vague Machine, La Vague Machine, Inventer les institutions
+      </a>
+    </p>
 
-<div class="legal" style="font-size:0.9rem; margin-top:20px; line-height:1.4;">
-  <p style="margin:0;">© Agnès Vendeville — Œuvre et méthodes conceptuelles protégées par la SACD.</p>
-  <p style="margin:0;">Usage professionnel, conceptuel, institutionnel.</p>
-  <p style="margin:0;">contact@lavaguemachine.fr</p>
-</div>
+    <div class="legal" style="font-size:0.9rem; margin-top:20px; line-height:1.4;">
+      <p style="margin:0;">© Agnès Vendeville — Œuvre et méthodes conceptuelles protégées par la SACD.</p>
+      <p style="margin:0;">Usage professionnel, conceptuel, institutionnel.</p>
+      <p style="margin:0;">contact@lavaguemachine.fr</p>
+    </div>
+  </div>
+
 </body>
 </html>
