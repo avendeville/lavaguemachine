@@ -2,122 +2,165 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Le triptyque vendevillien</title>
- <style>
-  :root {
-    --noir: #111111;
-    --sable-clair: #F7EFE3;
-    --brun: #7A4E2D;
-  }
+  <meta name="robots" content="index, follow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Le triptyque vendevillien — Système vendevillien</title>
 
- /* BODY — marge standardisée */
-body {
-  background-color: var(--sable-clair);
-  color: var(--noir);
-  font-family: Arial, sans-serif;
-  margin: 70px auto;
-  max-width: 780px;
-  line-height: 1.65;
-  position: relative;
-}
+  <style>
+    :root {
+      --sable: #F4E9D8;
+      --noir: #111111;
+      --brun: #7A4E2D;
+    }
 
-/* MOTIF PRINCIPAL — placement standardisé */
-.motif {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  opacity: 0.55;
-  margin: 0 auto 40px auto;
-}
+    body {
+      background-color: var(--sable);
+      color: var(--noir);
+      font-family: Arial, sans-serif;
+      margin: 70px auto;
+      max-width: 780px;
+      line-height: 1.65;
+      position: relative;
+    }
 
-.motif .chevron {
-  width: 32px;
-  height: 32px;
-  border-left: 4px solid var(--brun);
-  border-bottom: 4px solid var(--brun);
-}
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 40px;
+      width: 3px;
+      height: 100vh;
+      background-color: var(--brun);
+      opacity: 0.25;
+    }
 
-.motif .chevron.up {
-  transform: rotate(180deg);
-}
+    h1, h2 {
+      font-weight: normal;
+      color: var(--brun);
+      margin-top: 30px;
+    }
 
-.motif .line {
-  width: 4px;
-  height: 70px;
-  background-color: var(--brun);
-  margin: 6px 0;
-}
+    h1 {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
 
-/* TITRES */
-h1 {
-  text-align: center;
-  font-size: 32px;
-  margin-bottom: 50px;
-  color: var(--brun);
-}
+    h2 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
 
-h2 {
-  font-size: 22px;
-  margin-top: 40px;
-  color: var(--brun);
-}
+    p {
+      margin-top: 0;
+      margin-bottom: 6px;
+      line-height: 1.65;
+    }
 
-/* LIENS */
-a {
-  color: var(--brun);
-  text-decoration: none;
-}
+    .section {
+      margin-bottom: 40px;
+    }
 
-.retour {
-  margin-top: 60px;
-  text-align: center;
-}
-   .legal {
-  font-size: 0.85rem;
-  color: #555;
-  margin-top: 2rem;
-  text-align: center;
-}
-</style>
+    .legal {
+      font-size: 14px;
+      color: var(--noir);
+      opacity: 0.7;
+      margin-top: 70px;
+    }
+
+    /* MOTIF PRINCIPAL */
+    .motif {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      opacity: 0.55;
+      margin: 0 auto 40px auto;
+    }
+
+    .motif .chevron {
+      width: 32px;
+      height: 32px;
+      border-left: 4px solid var(--brun);
+      border-bottom: 4px solid var(--brun);
+    }
+
+    .motif .chevron.up {
+      transform: rotate(180deg);
+    }
+
+    .motif .line {
+      width: 4px;
+      height: 70px;
+      background-color: var(--brun);
+      margin: 6px 0;
+    }
+
+    /* LIEN RETOUR */
+    .retour {
+      display: block;
+      margin-top: 20px;
+      font-size: 16px;
+      color: var(--brun);
+      text-decoration: none;
+      opacity: 0.8;
+    }
+
+    .retour:hover {
+      opacity: 1;
+    }
+  </style>
 </head>
 
 <body>
 
-<!-- MOTIF PRINCIPAL -->
-<div class="motif">
-  <div class="chevron up"></div>
-  <div class="line"></div>
-  <div class="chevron"></div>
-</div>
-
-  
-
-  <h2>Surfer la Vague Machine — Livre I</h2>
-  <p>
-    Le premier livre explore l’expérience institutionnelle depuis l’intérieur : la vague, le mouvement, 
-    les dynamiques qui emportent, déstabilisent ou révèlent. 
-    Il ouvre la porte d’entrée du système par l’expérience vécue.
-  </p>
-
-  <h2>La Vague Machine — Livre II</h2>
-  <p>
-    Le second livre expose la mécanique : les structures, les forces, les rouages qui organisent 
-    les institutions. Il constitue le cœur conceptuel de la Vague Machine.
-  </p>
-
-  <h2>Inventer les institutions — Livre III</h2>
-  <p>
-    Le troisième livre projette : il propose une architecture de transformation, une manière de 
-    reconstruire les institutions à partir de la lucidité structurelle. 
-    C’est la dimension prospective du triptyque.
-  </p>
-
-  <div class="retour">
-    <a href="index.html">← Retour à l’accueil</a>
+  <!-- MOTIF PRINCIPAL -->
+  <div class="motif">
+    <div class="chevron up"></div>
+    <div class="line"></div>
+    <div class="chevron"></div>
   </div>
+
+  <!-- TITRE -->
+  <h1>Le triptyque vendevillien</h1>
+
+  <a href="index.html" class="retour">← Retour à l’accueil</a>
+
+  <!-- LIVRE I -->
+  <div class="section">
+    <h2>Surfer la Vague Machine — Livre I</h2>
+    <p>
+      Le premier livre explore l’expérience institutionnelle depuis l’intérieur : la vague, le mouvement, les dynamiques qui emportent, déstabilisent ou révèlent.
+    </p>
+    <p>
+      Il ouvre la porte d’entrée du système par l’expérience vécue.
+    </p>
+  </div>
+
+  <!-- LIVRE II -->
+  <div class="section">
+    <h2>La Vague Machine — Livre II</h2>
+    <p>
+      Le second livre expose la mécanique : les structures, les forces et les rouages qui organisent les institutions.
+    </p>
+    <p>
+      Il constitue le <strong>cœur conceptuel</strong> de la Vague Machine.
+    </p>
+  </div>
+
+  <!-- LIVRE III -->
+  <div class="section">
+    <h2>Inventer les institutions — Livre III</h2>
+    <p>
+      Le troisième livre projette : il propose une architecture de transformation, une manière de reconstruire les institutions à partir de la lucidité structurelle.
+    </p>
+    <p>
+      C’est la dimension prospective du triptyque.
+    </p>
+  </div>
+
+  <!-- MENTION LÉGALE -->
   <div class="legal">
-  © Agnès Vendeville — Œuvre protégée par la SACD.
-</div>
+    © Agnès Vendeville — Œuvre protégée par la SACD.
+  </div>
 
 </body>
 </html>
