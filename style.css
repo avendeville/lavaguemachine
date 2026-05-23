@@ -1,0 +1,28 @@
+/* STYLE GLOBAL DU SITE */
+body {
+  background:#F4E9D8;
+  color:#111;
+  font-family:Arial;
+  line-height:1.65;
+}
+
+/* VERSION MOBILE */
+@media (max-width:768px) {
+  body {
+    margin:0 !important;
+    padding:20px !important;
+    max-width:100% !important;
+  }
+
+  body::before {
+    display:none !important;
+  }
+
+  h1 {
+    font-size:28px !important;
+  }
+
+  p, a {
+    font-size:17px !important;
+  }
+}
