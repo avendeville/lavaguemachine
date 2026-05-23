@@ -6,6 +6,19 @@ body {
   line-height:1.65;
 }
 
+/* TITRES — VERSION GLOBALE (desktop + mobile) */
+h1 {
+  font-size: 32px;
+  line-height: 1.25;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-size: 22px;
+  line-height: 1.3;
+  margin-bottom: 14px;
+}
+
 /* VERSION MOBILE */
 @media (max-width:768px) {
   body {
