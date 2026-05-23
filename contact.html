@@ -20,6 +20,49 @@
     display: none;
   }
 }
+
+/* VERSION MOBILE RÉDUITE — harmonisée avec les autres pages */
+@media (max-width: 768px) {
+
+  /* Supprimer la ligne verticale */
+  body::before {
+    display: none !important;
+  }
+
+  /* Réduire les marges et élargir la page */
+  body {
+    margin: 30px auto !important;
+    padding: 0 16px !important;
+    max-width: 100% !important;
+    line-height: 1.55 !important;
+  }
+
+  /* Titres */
+  h1 {
+    font-size: 28px !important;
+    margin-top: 20px !important;
+    margin-bottom: 12px !important;
+  }
+
+  h2 {
+    font-size: 20px !important;
+    margin-top: 24px !important;
+    margin-bottom: 10px !important;
+  }
+
+  /* Texte */
+  p, a, strong {
+    font-size: 16px !important;
+    line-height: 1.55 !important;
+  }
+
+  /* Navigation */
+  nav {
+    gap: 14px !important;
+    flex-wrap: wrap !important;
+    font-size: 15px !important;
+  }
+}
     
   </style>
 </head>
