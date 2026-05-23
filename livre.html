@@ -40,36 +40,10 @@
     a:hover { opacity: 1; text-decoration: underline; }
     .section { margin-bottom: 40px; }
 
- /* MOBILE — style commun à toutes les pages */
-
-/* Enlever la ligne verticale */
-@media (max-width: 768px) {
-  body::before {
-    display: none !important;
-  }
-}
-
-/* Texte plus grand + centré */
-@media (max-width: 768px) {
+ @media (max-width: 768px) {
   body {
-    font-size: 18px !important;
-    margin: 30px 20px !important;
-    text-align: center !important;
-  }
-}
-
-/* Menu sur 2 lignes, centré, sans coupure */
-@media (max-width: 768px) {
-  nav {
-    display: flex !important;
-    flex-wrap: wrap !important;
-    justify-content: center !important;
-    gap: 4px 10px !important;
-    font-size: 18px !important;
-  }
-
-  nav a {
-    white-space: nowrap !important;
+    font-size: 17px;   /* ou 18px si tu veux un peu plus */
+    line-height: 1.7;
   }
 }
     
