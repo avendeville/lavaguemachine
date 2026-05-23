@@ -45,6 +45,32 @@
     display: none;
   }
 }
+
+/* Mobile : menu sur 2 lignes, resserré, sans coupure */
+@media (max-width: 768px) {
+  nav {
+    display: flex;
+    flex-wrap: wrap;     /* autorise 2 lignes */
+    gap: 4px 10px;       /* espace vertical + horizontal resserré */
+    font-size: 18px;     /* lisible mais pas énorme */
+  }
+
+  nav a {
+    white-space: nowrap; /* empêche les mots d’être coupés */
+  }
+}
+
+    @media (max-width: 768px) {
+  .sceau-accueil {
+    display: none !important;
+  }
+}
+
+    @media (max-width: 768px) {
+  nav {
+    justify-content: center;
+  }
+}
     
   </style>
 </head>
