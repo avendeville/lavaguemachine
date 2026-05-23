@@ -4,17 +4,17 @@
   <meta charset="UTF-8">
   <meta name="robots" content="index, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Les mécaniques institutionnelles — Système vendevillien</title>
+  <title>Les mécaniques institutionnelles — La Vague Machine</title>
 
   <style>
     :root {
       --sable: #F4E9D8;
-      --noir: #111111;
+      --noir: #111;
       --brun: #8A6A3A;
     }
 
     body {
-      background-color: var(--sable);
+      background: var(--sable);
       color: var(--noir);
       font-family: Arial, sans-serif;
       margin: 70px auto;
@@ -23,6 +23,7 @@
       position: relative;
     }
 
+    /* Barre verticale */
     body::before {
       content: "";
       position: fixed;
@@ -30,49 +31,45 @@
       left: 40px;
       width: 3px;
       height: 100vh;
-      background-color: var(--brun);
+      background: var(--brun);
       opacity: 0.25;
     }
-    @media (max-width: 768px) {
-  body::before {
-    display: none;
-  }
-}
 
+    @media (max-width: 768px) {
+      body::before {
+        display: none;
+      }
+    }
+
+    /* TITRES */
     h1, h2 {
       font-weight: normal;
-      color: #8A6A3A;
-      margin-top: 30px;
+      color: var(--brun);
+      margin-top: 40px;
     }
 
     h1 {
-      font-size: 30px;
+      font-size: 34px;
       margin-bottom: 10px;
     }
 
     h2 {
       font-size: 22px;
+      margin-bottom: 12px;
+    }
+
+    /* TEXTE */
+    p {
+      margin-top: 0;
       margin-bottom: 10px;
     }
 
-    p {
-      margin-top: 0;
-      margin-bottom: 6px;
-      line-height: 1.65;
-    }
-
+    /* SECTIONS */
     .section {
       margin-bottom: 40px;
     }
 
-    .legal {
-      font-size: 14px;
-      color: var(--noir);
-      opacity: 0.7;
-      margin-top: 70px;
-    }
-
-     /* MOTIF PRINCIPAL */
+    /* MOTIF (triangle-ligne-triangle) */
     .motif {
       display: flex;
       flex-direction: column;
@@ -84,8 +81,8 @@
     .motif .chevron {
       width: 24px;
       height: 24px;
-      border-left: 3px solid #8a6a3a;
-      border-bottom: 3px solid #8a6a3a;
+      border-left: 3px solid var(--brun);
+      border-bottom: 3px solid var(--brun);
     }
 
     .motif .chevron.up {
@@ -95,34 +92,34 @@
     .motif .line {
       width: 3px;
       height: 55px;
-      background-color: #8a6a3a;
+      background: var(--brun);
       margin: 5px 0;
     }
 
-    /* Mobile : réduire le symbole triangle-ligne-triangle */
-@media (max-width: 768px) {
-  .motif .chevron {
-    width: 16px;
-    height: 16px;
-    border-left: 2px solid #8a6a3a;
-    border-bottom: 2px solid #8a6a3a;
-  }
+    /* MOBILE : motif réduit */
+    @media (max-width: 768px) {
+      .motif .chevron {
+        width: 16px;
+        height: 16px;
+        border-left: 2px solid var(--brun);
+        border-bottom: 2px solid var(--brun);
+      }
 
-  .motif .line {
-    width: 2px;
-    height: 35px;
-  }
+      .motif .line {
+        width: 2px;
+        height: 35px;
+      }
 
-  .motif {
-    opacity: 0.30;
-    margin-bottom: 30px;
-  }
-}
+      .motif {
+        opacity: 0.30;
+        margin-bottom: 30px;
+      }
+    }
 
     /* LIEN RETOUR */
     .retour {
       display: block;
-      margin-top: 20px;
+      margin-top: 10px;
       font-size: 16px;
       color: var(--brun);
       text-decoration: none;
@@ -132,12 +129,26 @@
     .retour:hover {
       opacity: 1;
     }
+
+    /* LISTE */
+    ul {
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+
+    /* MENTION LÉGALE */
+    .legal {
+      font-size: 14px;
+      color: var(--noir);
+      opacity: 0.7;
+      margin-top: 70px;
+    }
   </style>
 </head>
 
 <body>
 
-  <!-- MOTIF PRINCIPAL -->
+  <!-- MOTIF -->
   <div class="motif">
     <div class="chevron up"></div>
     <div class="line"></div>
@@ -148,7 +159,7 @@
   <h1>Les mécaniques institutionnelles</h1>
 
   <a class="retour" href="vaguemachine.html">← Retour à La Vague Machine</a>
-  
+
   <!-- INTRO -->
   <div class="section">
     <p>
@@ -167,16 +178,16 @@
     <h2>Les 13 mécaniques</h2>
 
     <p>
-  Les treize mécaniques constituent l’ensemble minimal permettant de lire les dynamiques institutionnelles et leurs dérives.
-</p>
+      Les treize mécaniques constituent l’ensemble minimal permettant de lire les dynamiques institutionnelles et leurs dérives.
+    </p>
 
-<p>
-  Elles permettent de lire les dynamiques, d’identifier les dérives et de comprendre les forces à l’œuvre dans les organisations.
-</p>
+    <p>
+      Elles permettent de lire les dynamiques, d’identifier les dérives et de comprendre les forces à l’œuvre dans les organisations.
+    </p>
 
-<p>
-  Cette page accueillera leur présentation détaillée, chacune étant structurée selon le format vendevillien :
-</p>
+    <p>
+      Cette page accueillera leur présentation détaillée, chacune étant structurée selon le format vendevillien :
+    </p>
 
     <ul>
       <li>Définition</li>
