@@ -56,43 +56,37 @@
       text-decoration:underline;
     }
 
-    /* VERSION MOBILE — AGRANDIE, SANS MARGE, SANS LIGNE */
     @media (max-width: 768px) {
+  body::before {
+    display: none;
+  }
+}
+
+/* Mobile : menu sur 2 lignes, resserré, sans coupure */
+@media (max-width: 768px) {
   nav {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 8px 16px;      /* vertical / horizontal */
+    flex-wrap: wrap;     /* autorise 2 lignes */
+    gap: 4px 10px;       /* espace vertical + horizontal resserré */
+    font-size: 18px;     /* lisible mais pas énorme */
   }
 
   nav a {
-    white-space: nowrap;
-    font-size: 16px;
+    white-space: nowrap; /* empêche les mots d’être coupés */
   }
 }
-      
-      /* Supprimer la ligne verticale */
-      body::before {
-        display: none !important;
-      }
 
-      /* Agrandir la page */
-      body {
-        margin: 0 !important;
-        padding: 20px !important;
-        max-width: 100% !important;
-        width: 100% !important;
-        line-height: 1.55 !important;
-      }
+    @media (max-width: 768px) {
+  .sceau-accueil {
+    display: none !important;
+  }
+}
 
-      /* Navigation */
-      nav {
-        gap: 14px !important;
-        flex-wrap: wrap !important;
-        font-size: 16px !important;
-        margin-bottom: 24px !important;
-      }
-
+    @media (max-width: 768px) {
+  nav {
+    justify-content: center;
+  }
+}
       /* Titre */
       h1 {
         font-size: 28px !important;
