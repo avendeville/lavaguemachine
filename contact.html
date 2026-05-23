@@ -59,6 +59,21 @@
     /* VERSION MOBILE — AGRANDIE, SANS MARGE, SANS LIGNE */
     @media (max-width: 768px) {
 
+/* MENU MOBILE SUR UNE SEULE LIGNE */
+nav {
+  display: flex;
+  flex-wrap: nowrap !important;   /* empêche le retour à la ligne */
+  overflow-x: auto;               /* permet de scroller si trop long */
+  gap: 14px !important;           /* espace réduit */
+  padding-bottom: 6px;
+  -webkit-overflow-scrolling: touch;
+}
+
+nav a {
+  white-space: nowrap;            /* empêche les mots de se couper */
+  font-size: 16px !important;
+}
+      
       /* Supprimer la ligne verticale */
       body::before {
         display: none !important;
