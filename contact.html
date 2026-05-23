@@ -8,62 +8,86 @@
   <!-- COULEURS -->
   <style>
     :root { --sable:#F4E9D8; --noir:#111; --brun:#8A6A3A; }
-    body { background:var(--sable); color:var(--noir); font-family:Arial; margin:70px auto; max-width:780px; line-height:1.65; position:relative; }
-    body::before { content:""; position:fixed; top:0; left:40px; width:3px; height:100vh; background:var(--brun); opacity:0.25; }
-    h1 { font-weight:normal; color:var(--brun); margin-top:40px; font-size:34px; }
-    nav { display:flex; gap:22px; margin-bottom:40px; }
-    a { color:var(--brun); opacity:0.85; text-decoration:none; }
-    a:hover { opacity:1; text-decoration:underline; }
 
+    /* VERSION DESKTOP */
+    body {
+      background:var(--sable);
+      color:var(--noir);
+      font-family:Arial;
+      margin:70px auto;
+      max-width:780px;
+      line-height:1.65;
+      position:relative;
+    }
+
+    body::before {
+      content:"";
+      position:fixed;
+      top:0;
+      left:40px;
+      width:3px;
+      height:100vh;
+      background:var(--brun);
+      opacity:0.25;
+    }
+
+    h1 {
+      font-weight:normal;
+      color:var(--brun);
+      margin-top:40px;
+      font-size:34px;
+    }
+
+    nav {
+      display:flex;
+      gap:22px;
+      margin-bottom:40px;
+    }
+
+    a {
+      color:var(--brun);
+      opacity:0.85;
+      text-decoration:none;
+    }
+
+    a:hover {
+      opacity:1;
+      text-decoration:underline;
+    }
+
+    /* VERSION MOBILE — AGRANDIE, SANS MARGE, SANS LIGNE */
     @media (max-width: 768px) {
-  body::before {
-    display: none;
-  }
-}
 
-/* VERSION MOBILE RÉDUITE — harmonisée avec les autres pages */
-@media (max-width: 768px) {
+      body::before {
+        display: none !important;
+      }
 
-  /* Supprimer la ligne verticale */
-  body::before {
-    display: none !important;
-  }
+      body {
+        margin: 0 !important;
+        padding: 20px !important;
+        max-width: 100% !important;
+        width: 100% !important;
+        line-height: 1.55 !important;
+      }
 
-  /* Réduire les marges et élargir la page */
-  body {
-    margin: 30px auto !important;
-    padding: 0 16px !important;
-    max-width: 100% !important;
-    line-height: 1.55 !important;
-  }
+      nav {
+        gap: 14px !important;
+        flex-wrap: wrap !important;
+        font-size: 16px !important;
+        margin-bottom: 24px !important;
+      }
 
-  /* Titres */
-  h1 {
-    font-size: 28px !important;
-    margin-top: 20px !important;
-    margin-bottom: 12px !important;
-  }
+      h1 {
+        font-size: 28px !important;
+        margin-top: 10px !important;
+        margin-bottom: 16px !important;
+      }
 
-  h2 {
-    font-size: 20px !important;
-    margin-top: 24px !important;
-    margin-bottom: 10px !important;
-  }
-
-  /* Texte */
-  p, a, strong {
-    font-size: 16px !important;
-    line-height: 1.55 !important;
-  }
-
-  /* Navigation */
-  nav {
-    gap: 14px !important;
-    flex-wrap: wrap !important;
-    font-size: 15px !important;
-  }
-}
-    
+      p, a, strong {
+        font-size: 17px !important;
+        line-height: 1.55 !important;
+      }
+    }
   </style>
 </head>
 
