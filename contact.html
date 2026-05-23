@@ -59,19 +59,26 @@
     /* VERSION MOBILE — AGRANDIE, SANS MARGE, SANS LIGNE */
     @media (max-width: 768px) {
 
-/* MENU MOBILE SUR UNE SEULE LIGNE */
+/* MENU GLOBAL — CENTRÉ, ÉQUILIBRÉ */
 nav {
   display: flex;
-  flex-wrap: nowrap !important;   /* empêche le retour à la ligne */
-  overflow-x: auto;               /* permet de scroller si trop long */
-  gap: 14px !important;           /* espace réduit */
-  padding-bottom: 6px;
-  -webkit-overflow-scrolling: touch;
+  flex-wrap: wrap;          /* permet 2 lignes */
+  justify-content: center;  /* centre le menu */
+  gap: 26px;                /* espace harmonieux */
+  margin: 30px 0 40px 0;    /* aération en haut */
 }
 
 nav a {
-  white-space: nowrap;            /* empêche les mots de se couper */
-  font-size: 16px !important;
+  color: var(--brun);
+  opacity: 0.85;
+  text-decoration: none;
+  font-size: 18px;
+  white-space: nowrap;      /* évite les coupures de mots */
+}
+
+nav a:hover {
+  opacity: 1;
+  text-decoration: underline;
 }
       
       /* Supprimer la ligne verticale */
