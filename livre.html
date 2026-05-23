@@ -43,31 +43,31 @@
 /* Mobile : enlever la ligne verticale */
 @media (max-width: 768px) {
   body::before {
-    display: none;
+    display: none !important;
   }
 }
 
 /* Mobile : agrandir le texte et ajouter des marges */
 @media (max-width: 768px) {
   body {
-    font-size: 18px;
-    margin: 30px 20px;
+    font-size: 18px !important;
+    margin: 30px 20px !important;
   }
 }
 
 /* Mobile : menu sur 2 lignes, resserré, sans coupure */
 @media (max-width: 768px) {
   nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 4px 10px;
-    font-size: 18px;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 4px 10px !important;
+    font-size: 18px !important;
   }
 
   nav a {
-    white-space: nowrap;
+    white-space: nowrap !important;
   }
-}    
+}
   </style>
 </head>
 
