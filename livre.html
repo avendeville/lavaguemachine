@@ -31,6 +31,37 @@
       background-color: var(--brun);
       opacity: 0.25;
     }
+
+    /* Mobile : enlever la ligne verticale */
+@media (max-width: 768px) {
+  body::before {
+    display: none;
+  }
+}
+
+/* Mobile : agrandir le texte et centrer */
+@media (max-width: 768px) {
+  body {
+    font-size: 18px;
+    margin: 30px 20px;
+    text-align: center;
+  }
+}
+
+/* Mobile : menu sur 2 lignes, centré, sans coupure */
+@media (max-width: 768px) {
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4px 10px;
+    font-size: 18px;
+  }
+
+  nav a {
+    white-space: nowrap;
+  }
+}
     
     h1, h2 { font-weight: normal; color: var(--brun); margin-top: 40px; }
     h1 { font-size: 34px; margin-bottom: 10px; }
