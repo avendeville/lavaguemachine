@@ -40,34 +40,36 @@
     a:hover { opacity: 1; text-decoration: underline; }
     .section { margin-bottom: 40px; }
 
- /* Mobile : enlever la ligne verticale */
+ /* MOBILE — style commun à toutes les pages */
+
+/* Enlever la ligne verticale */
 @media (max-width: 768px) {
   body::before {
-    display: none;
+    display: none !important;
   }
 }
 
-/* Mobile : agrandir le texte et centrer */
+/* Texte plus grand + centré */
 @media (max-width: 768px) {
   body {
-    font-size: 18px;
-    margin: 30px 20px;
-    text-align: center;
+    font-size: 18px !important;
+    margin: 30px 20px !important;
+    text-align: center !important;
   }
 }
 
-/* Mobile : menu sur 2 lignes, centré, sans coupure */
+/* Menu sur 2 lignes, centré, sans coupure */
 @media (max-width: 768px) {
   nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 4px 10px;
-    font-size: 18px;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 4px 10px !important;
+    font-size: 18px !important;
   }
 
   nav a {
-    white-space: nowrap;
+    white-space: nowrap !important;
   }
 }
     
