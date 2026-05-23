@@ -58,10 +58,12 @@
     /* VERSION MOBILE — AGRANDIE, SANS MARGE, SANS LIGNE */
     @media (max-width: 768px) {
 
+      /* Supprimer la ligne verticale */
       body::before {
         display: none !important;
       }
 
+      /* Agrandir la page */
       body {
         margin: 0 !important;
         padding: 20px !important;
@@ -70,6 +72,7 @@
         line-height: 1.55 !important;
       }
 
+      /* Navigation */
       nav {
         gap: 14px !important;
         flex-wrap: wrap !important;
@@ -77,12 +80,14 @@
         margin-bottom: 24px !important;
       }
 
+      /* Titre */
       h1 {
         font-size: 28px !important;
         margin-top: 10px !important;
         margin-bottom: 16px !important;
       }
 
+      /* Texte */
       p, a, strong {
         font-size: 17px !important;
         line-height: 1.55 !important;
