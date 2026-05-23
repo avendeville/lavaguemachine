@@ -40,8 +40,13 @@
       opacity: 0.25;
     }
     
-   
-/* Mobile : agrandir le texte et réduire les marges */
+@media (max-width: 768px) {
+  body::before {
+    display: none;
+  }
+}
+    
+    /* Mobile : agrandir le texte et réduire les marges */
 @media (max-width: 768px) {
   body {
     font-size: 18px;
