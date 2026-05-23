@@ -40,27 +40,31 @@
       opacity: 0.25;
     }
     
-    @media (max-width: 768px) {
+    /* Mobile : enlever la ligne verticale */
+@media (max-width: 768px) {
   body::before {
     display: none;
   }
 }
 
-    @media (max-width: 768px) {
+/* Mobile : agrandir le texte et réduire les marges */
+@media (max-width: 768px) {
   body {
     font-size: 18px;
     margin: 30px 20px;
   }
+}
 
-      @media (max-width: 768px) {
+/* Mobile : resserrer le menu et empêcher les coupures */
+@media (max-width: 768px) {
   nav {
     flex-wrap: wrap;
-    gap: 12px 18px;
+    gap: 4px 10px;      /* espace vertical + horizontal resserré */
     font-size: 18px;
   }
 
   nav a {
-    white-space: nowrap;
+    white-space: nowrap; /* empêche les mots d’être coupés */
   }
 }
 
