@@ -58,29 +58,16 @@
 
     /* VERSION MOBILE — AGRANDIE, SANS MARGE, SANS LIGNE */
     @media (max-width: 768px) {
-
-/* VERSION MOBILE — MENU EN 2 LIGNES CENTRÉES */
-@media (max-width: 768px) {
-
   nav {
     display: flex;
-    flex-wrap: wrap;          /* autorise 2 lignes */
-    justify-content: center;  /* centre le menu */
-    gap: 10px 18px;           /* vertical / horizontal */
-    font-size: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px 16px;      /* vertical / horizontal */
   }
 
   nav a {
-    white-space: nowrap;      /* empêche les coupures */
-  }
-
-  /* FORCE LA STRUCTURE EN 2 LIGNES ÉQUILIBRÉES */
-  nav a:nth-child(-n+3) {
-    order: 1;                 /* Accueil, Livre, À propos → ligne 1 */
-  }
-
-  nav a:nth-child(n+4) {
-    order: 2;                 /* La Vague Machine, Contact → ligne 2 */
+    white-space: nowrap;
+    font-size: 16px;
   }
 }
       
