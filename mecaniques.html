@@ -33,6 +33,11 @@
       background-color: var(--brun);
       opacity: 0.25;
     }
+    @media (max-width: 768px) {
+  body::before {
+    display: none;
+  }
+}
 
     h1, h2 {
       font-weight: normal;
@@ -93,6 +98,26 @@
       background-color: #8a6a3a;
       margin: 5px 0;
     }
+
+    /* Mobile : réduire le symbole triangle-ligne-triangle */
+@media (max-width: 768px) {
+  .motif .chevron {
+    width: 16px;
+    height: 16px;
+    border-left: 2px solid #8a6a3a;
+    border-bottom: 2px solid #8a6a3a;
+  }
+
+  .motif .line {
+    width: 2px;
+    height: 35px;
+  }
+
+  .motif {
+    opacity: 0.30;
+    margin-bottom: 30px;
+  }
+}
 
     /* LIEN RETOUR */
     .retour {
