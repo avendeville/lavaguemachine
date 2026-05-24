@@ -168,11 +168,12 @@ a:hover {
   .nav-hero {
     flex-wrap: nowrap;      /* empêche les retours à la ligne */
     white-space: nowrap;    /* force tout sur une seule ligne */
-    gap: 6px;               /* espace réduit entre les liens */
+    gap: 6px;               /* réduit l'espace entre les liens */
     top: 6px;               /* bien collé en haut du bandeau */
   }
 
   .nav-hero a {
-    font-size: 13px !important;  /* taille réduite pour tenir */
+    font-size: 13px !important;  /* écrase le 17px global */
+    padding: 0;                  /* évite que ça prenne trop de place */
   }
 }
