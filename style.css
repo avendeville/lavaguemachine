@@ -74,6 +74,19 @@ nav a:hover {
     white-space: nowrap;
   }
 }
+
+/* STYLE GLOBAL POUR TOUS LES LIENS DU CONTENU */
+a {
+  color: #8A6A3A;
+  text-decoration: none;
+  opacity: 0.85;
+}
+
+a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
 /* ALIGNEMENT GLOBAL PAR DÉFAUT SUR MOBILE : GAUCHE */
 @media (max-width: 768px) {
   body {
