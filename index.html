@@ -11,6 +11,38 @@
 
   <link rel="stylesheet" href="style.css">
   
+<style>
+    /* --- TITRE DU LIVRE SUR LA PAGE D’ACCUEIL --- */
+.titre-livre {
+  font-size: 26px;
+  font-weight: 700;
+  color: #8A6A3A;
+  margin: 6px 0 2px 0;
+}
+
+.sous-titre-livre {
+  font-size: 18px;
+  font-weight: 400;
+  color: #8A6A3A;
+  opacity: 0.85;
+  margin: 0 0 10px 0;
+}
+
+.decouvrir-lien {
+  color: #000;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .titre-livre {
+    font-size: 24px;
+  }
+  .sous-titre-livre {
+    font-size: 17px;
+  }
+}
+  
   <style>
     /* Ton CSS existant est conservé tel quel */
     :root {
@@ -170,18 +202,24 @@
 
   <!-- LIVRE -->
   <section class="section">
- <p>
-    Découvrir
+
+  <p class="decouvrir">
+    <a href="livre.html" class="decouvrir-lien">Découvrir</a>
   </p>
 
   <h2 class="titre-livre">
-  <a href="livre.html"><strong><em>Surfer la Vague Machine</em></strong></a>
-</h2>
+    <a href="livre.html"><strong><em>Surfer la Vague Machine</em></strong></a>
+  </h2>
 
-  </p>
+  <h3 class="sous-titre-livre">
+    <a href="livre.html"><em>Tenir l'horizon d'une institution à la dérive</em></a>
+  </h3>
+
+  <p>
     Essai narratif d’une institution à la dérive.<br>
     Un récit incarné, tendu, lucide.
   </p>
+
 </section>
 
   <!-- UNIVERS CONCEPTUEL (VERSION ÉDITORIALE) -->
