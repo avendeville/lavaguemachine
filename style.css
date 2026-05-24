@@ -139,8 +139,8 @@ a:hover {
 }
 
 .nav-hero a {
-  color: #8A6A3A; /* ton brun doré */
-  text-shadow: 0 1px 3px rgba(255,255,255,0.6); /* halo clair pour la lisibilité */
+  color: #8A6A3A !important; /* brun doré */
+  text-shadow: 0 1px 3px rgba(255,255,255,0.6);
   text-decoration: none;
   opacity: 0.9;
 }
