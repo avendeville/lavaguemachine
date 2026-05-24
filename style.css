@@ -152,15 +152,15 @@ a:hover {
 @media (max-width: 768px) {
   .nav-hero {
     top: 6px;              /* un peu plus près du haut */
-    gap: 10px;             /* liens plus rapprochés */
+    gap: 6px;             /* liens plus rapprochés */
   }
 
   .nav-hero a {
-    font-size: 14px;       /* plus petit pour tenir sur une ligne */
+    font-size: 12px;       /* plus petit pour tenir sur une ligne */
     white-space: nowrap;   /* empêche les retours à la ligne */
   }
 
   .bandeau-hero {
-    max-height: 160px;     /* laisse la place au menu */
+    max-height: 150px;     /* laisse la place au menu */
   }
 }
