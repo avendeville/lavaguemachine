@@ -4,96 +4,82 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact — Agnès Vendeville</title>
+
   <link rel="stylesheet" href="style.css">
 
-  <!-- COULEURS -->
   <style>
-    :root { --sable:#F4E9D8; --noir:#111; --brun:#8A6A3A; }
+    /* COULEURS */
+    :root {
+      --sable: #F4E9D8;
+      --noir: #111;
+      --brun: #8A6A3A;
+    }
 
-    /* VERSION DESKTOP */
+    /* STRUCTURE */
     body {
-      background:var(--sable);
-      color:var(--noir);
-      font-family:Arial;
-      margin:70px auto;
-      max-width:780px;
-      line-height:1.65;
-      position:relative;
+      background: var(--sable);
+      color: var(--noir);
+      font-family: Arial, sans-serif;
+      margin: 70px auto;
+      max-width: 780px;
+      line-height: 1.65;
+      position: relative;
     }
 
     body::before {
-      content:"";
-      position:fixed;
-      top:0;
-      left:40px;
-      width:3px;
-      height:100vh;
-      background:var(--brun);
-      opacity:0.25;
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 40px;
+      width: 3px;
+      height: 100vh;
+      background: var(--brun);
+      opacity: 0.25;
     }
 
+    /* TITRE */
     h1 {
-      font-weight:normal;
-      color:var(--brun);
-      margin-top:40px;
-      font-size:26px;
+      font-weight: normal;
+      color: var(--brun);
+      margin-top: 40px;
+      font-size: 26px;
     }
 
-    nav {
-      display:flex;
-      gap:22px;
-      margin-bottom:40px;
-    }
-
+    /* LIENS */
     a {
-      color:var(--brun);
-      opacity:0.85;
-      text-decoration:none;
+      color: var(--brun);
+      opacity: 0.85;
+      text-decoration: none;
     }
 
     a:hover {
-      opacity:1;
-      text-decoration:underline;
+      opacity: 1;
+      text-decoration: underline;
     }
 
+    /* MOBILE */
     @media (max-width: 768px) {
 
-  nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 12px 18px;     /* vertical / horizontal */
-    margin-bottom: 24px;
-  }
-
-  nav a {
-    white-space: nowrap;
-    font-size: 16px;
-  }
-}
-
-    @media (max-width: 768px) {
-  .sceau-accueil {
-    display: none !important;
-  }
-}
-
-    @media (max-width: 768px) {
-  nav {
-    justify-content: center;
-  }
-}
-      /* Titre */
-      h1 {
-        font-size: 22px !important;
-        margin-top: 10px !important;
-        margin-bottom: 16px !important;
+      body {
+        margin: 0;
+        padding: 20px;
+        max-width: 100%;
+        text-align: center;
       }
 
-      /* Texte */
+      body::before {
+        display: none;
+      }
+
+      h1 {
+        font-size: 22px;
+        margin-top: 10px;
+        margin-bottom: 16px;
+      }
+
       p, a, strong {
-        font-size: 17px !important;
-        line-height: 1.55 !important;
+        font-size: 17px;
+        line-height: 1.55;
       }
     }
   </style>
@@ -101,18 +87,21 @@
 
 <body>
 
-<nav>
-  <a href="index.html">Accueil</a>
-  <a href="livre.html">Le livre</a>
-  <a href="apropos.html">À propos</a>
-  <a href="vaguemachine.html">La Vague Machine</a>
-  <a href="contact.html">Contact</a>
-</nav>
+  <!-- MENU GLOBAL (harmonisé via style.css) -->
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="livre.html">Le livre</a>
+    <a href="apropos.html">À propos</a>
+    <a href="vaguemachine.html">La Vague Machine</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
-<h1>Contact</h1>
+  <h1>Contact</h1>
 
-<p>Pour toute demande :<br>
-<a href="mailto:contact@lavaguemachine.fr">contact@lavaguemachine.fr</a></p>
+  <p>
+    Pour toute demande :<br>
+    <a href="mailto:contact@lavaguemachine.fr">contact@lavaguemachine.fr</a>
+  </p>
 
 </body>
 </html>
