@@ -151,17 +151,16 @@ a:hover {
 }
 @media (max-width: 768px) {
   .nav-hero a {
-    font-size: 13px !important;   /* taille réduite */
-    white-space: nowrap;           /* reste sur une seule ligne */
-    letter-spacing: 0.02em;
+    font-size: 13px !important;   /* plus petit que 17px */
+    white-space: nowrap;
   }
 
   .nav-hero {
-    top: 6px;                      /* bien collé en haut du bandeau */
-    gap: 8px;                      /* liens plus rapprochés */
+    top: 6px;
+    gap: 8px;
   }
 
   .bandeau-hero {
-    max-height: 150px;             /* bandeau un peu plus haut pour accueillir le menu */
+    max-height: 150px;
   }
 }
