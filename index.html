@@ -11,46 +11,15 @@
 
   <link rel="stylesheet" href="style.css">
   
-<style>
-    /* --- TITRE DU LIVRE SUR LA PAGE D’ACCUEIL --- */
-.titre-livre {
-  font-size: 26px;
-  font-weight: 700;
-  color: #8A6A3A;
-  margin: 6px 0 2px 0;
-}
-
-.sous-titre-livre {
-  font-size: 18px;
-  font-weight: 400;
-  color: #8A6A3A;
-  opacity: 0.85;
-  margin: 0 0 10px 0;
-}
-
-.decouvrir-lien {
-  color: #000;
-  font-weight: 500;
-  font-size: 0.9rem;
-}
-
-@media (max-width: 768px) {
-  .titre-livre {
-    font-size: 24px;
-  }
-  .sous-titre-livre {
-    font-size: 17px;
-  }
-}
-  
   <style>
-    /* Ton CSS existant est conservé tel quel */
+    /* --- COULEURS --- */
     :root {
       --sable: #F4E9D8;
       --noir: #111111;
       --brun: #8A6A3A;
     }
 
+    /* --- STRUCTURE GLOBALE --- */
     body {
       background-color: var(--sable);
       color: var(--noir);
@@ -71,44 +40,8 @@
       background-color: var(--brun);
       opacity: 0.25;
     }
-    
-@media (max-width: 768px) {
-  body::before {
-    display: none;
-  }
-}
 
-/* Mobile : menu sur 2 lignes, resserré, sans coupure */
-@media (max-width: 768px) {
-  nav {
-    display: flex;
-    flex-wrap: wrap;     /* autorise 2 lignes */
-    gap: 4px 10px;       /* espace vertical + horizontal resserré */
-    font-size: 18px;     /* lisible mais pas énorme */
-  }
-
-  nav a {
-    white-space: nowrap; /* empêche les mots d’être coupés */
-  }
-}
-
-    @media (max-width: 768px) {
-  .sceau-accueil {
-    display: none !important;
-  }
-      
-    @media (max-width: 768px) {
-  nav {
-    justify-content: center;
-  }
-}
-    
-    @media (max-width: 768px) {
-  body {
-    text-align: center;
-  }
-}
-
+    /* --- TITRES GÉNÉRAUX --- */
     h1, h2 {
       font-weight: normal;
       color: #8A6A3A;
@@ -126,26 +59,13 @@
     }
 
     h1 .sous-titre {
-  font-size: 22px;     /* plus petit que le titre */
-  font-weight: normal;
-  opacity: 0.85;       /* léger, élégant */
-  letter-spacing: 0.5px;
-}
-
-    .hero {
-      margin-top: 20px;
-      margin-bottom: 50px;
+      font-size: 22px;
+      font-weight: normal;
+      opacity: 0.85;
+      letter-spacing: 0.5px;
     }
 
-    .hero p {
-      margin: 6px 0;
-      font-size: 20px;
-    }
-
-    .section {
-      margin-bottom: 40px;
-    }
-
+    /* --- LIENS --- */
     a {
       color: #8A6A3A;
       text-decoration: none;
@@ -156,24 +76,94 @@
       opacity: 1;
       text-decoration: underline;
     }
-    
-    /* Taille du symbole : identique à ton site actuel */
-    .sceau-accueil img {
-  max-width: 180px !important;     /* plus petit, plus éditorial */
-  opacity: 0.75 !important;        /* effet filigrane */
-  display: block;
-  margin-top: 20px !important;     /* distance idéale sous le titre */
-  margin-bottom: 40px !important;  /* respiration avant les sections */
-  margin-left: 6px !important;     /* léger décalage façon tampon */
-}
 
-    /* Menu simple et élégant */
+    /* --- MENU --- */
     nav {
       display: flex;
       gap: 22px;
       margin-bottom: 40px;
       font-size: 1rem;
       letter-spacing: 0.03em;
+    }
+
+    /* --- SECTIONS --- */
+    .section {
+      margin-bottom: 40px;
+    }
+
+    /* --- SYMBOLE ACCUEIL --- */
+    .sceau-accueil img {
+      max-width: 180px !important;
+      opacity: 0.75 !important;
+      display: block;
+      margin-top: 20px !important;
+      margin-bottom: 40px !important;
+      margin-left: 6px !important;
+    }
+
+    /* --- BLOC LIVRE (ACCUEIL) --- */
+    .decouvrir-lien {
+      color: #000;
+      font-weight: 500;
+      font-size: 0.9rem;
+    }
+
+    .titre-livre {
+      font-size: 26px;
+      font-weight: 700;
+      color: #8A6A3A;
+      margin: 6px 0 2px 0;
+    }
+
+    .sous-titre-livre {
+      font-size: 18px;
+      font-weight: 400;
+      color: #8A6A3A;
+      opacity: 0.85;
+      margin: 0 0 10px 0;
+    }
+
+    /* --- MOBILE --- */
+    @media (max-width: 768px) {
+      body {
+        margin: 0;
+        padding: 20px;
+        max-width: 100%;
+        text-align: center;
+      }
+
+      body::before {
+        display: none;
+      }
+
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px 10px;
+        justify-content: center;
+        font-size: 18px;
+      }
+
+      nav a {
+        white-space: nowrap;
+      }
+
+      .sceau-accueil {
+        display: none !important;
+      }
+
+      .titre-livre {
+        font-size: 24px;
+      }
+
+      .sous-titre-livre {
+        font-size: 17px;
+      }
+
+      p, a, strong {
+        font-size: 17px;
+        line-height: 1.55;
+      }
     }
   </style>
 </head>
@@ -190,9 +180,9 @@
 
   <!-- IDENTITÉ AUTEURE -->
   <h1>
-  Agnès Vendeville<br>
-  <span class="sous-titre">Autrice</span>
-</h1>
+    Agnès Vendeville<br>
+    <span class="sous-titre">Autrice</span>
+  </h1>
   
   <!-- SYMBOLE -->
   <div class="sceau-accueil">
@@ -203,42 +193,45 @@
   <!-- LIVRE -->
   <section class="section">
 
-  <p class="decouvrir">
-    <a href="livre.html" class="decouvrir-lien">Découvrir</a>
-  </p>
+    <p class="decouvrir">
+      <a href="livre.html" class="decouvrir-lien">Découvrir</a>
+    </p>
 
-  <h2 class="titre-livre">
-    <a href="livre.html"><strong><em>Surfer la Vague Machine</em></strong></a>
-  </h2>
+    <h2 class="titre-livre">
+      <a href="livre.html"><strong><em>Surfer la Vague Machine</em></strong></a>
+    </h2>
 
-  <h3 class="sous-titre-livre">
-    <a href="livre.html"><em>Tenir l'horizon d'une institution à la dérive</em></a>
-  </h3>
+    <h3 class="sous-titre-livre">
+      <a href="livre.html"><em>Tenir l'horizon d'une institution à la dérive</em></a>
+    </h3>
 
-  <p>
-    Essai narratif d’une institution à la dérive.<br>
-    Un récit incarné, tendu, lucide.
-  </p>
+    <p>
+      Essai narratif d’une institution à la dérive.<br>
+      Un récit incarné, tendu, lucide.
+    </p>
 
-</section>
+  </section>
 
   <!-- UNIVERS CONCEPTUEL (VERSION ÉDITORIALE) -->
   <section class="section">
     <h2>La Vague Machine institutionnelle</h2>
+
     <p>
       Une manière d’observer les institutions comme des systèmes vivants : forces, tensions, cycles, dérives, effondrements.
     </p>
-    <p>
 
-    <p><strong>Lire les mécaniques</strong><br>
+    <p>
+      <strong>Lire les mécaniques</strong><br>
       Identifier ce qui agit réellement dans les institutions : forces, tensions, mouvements internes.
     </p>
 
-    <p><strong>Stabiliser les formes</strong><br>
+    <p>
+      <strong>Stabiliser les formes</strong><br>
       Clarifier les catégories, nommer les dérives, restaurer les équilibres.
     </p>
 
-    <p><strong>Réparer l’institution</strong><br>
+    <p>
+      <strong>Réparer l’institution</strong><br>
       Reconstruire les organes, réguler les tensions, rétablir la continuité.
     </p>
   </section>
