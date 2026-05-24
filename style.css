@@ -39,31 +39,3 @@ h2 {
     font-size:17px !important;
   }
 }
-/* --- TITRE DU LIVRE SUR LA PAGE D’ACCUEIL --- */
-
-.titre-livre {
-  font-size: 26px;
-  font-weight: 700;   /* gras */
-  color: #8A6A3A;
-  margin: 6px 0 2px 0;
-}
-
-.sous-titre-livre {
-  font-size: 18px;
-  font-weight: 400;   /* pas en gras */
-  color: #8A6A3A;
-  opacity: 0.85;
-  margin: 0 0 10px 0;
-}
-
-/* Version mobile */
-@media (max-width: 768px) {
-  .titre-livre {
-    font-size: 24px;
-    font-weight: 700;
-  }
-  .sous-titre-livre {
-    font-size: 17px;
-    font-weight: 400;
-  }
-}
