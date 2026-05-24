@@ -4,104 +4,128 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>La Vague Machine — Univers</title>
+
   <link rel="stylesheet" href="style.css">
 
-  <!-- COULEURS -->
   <style>
-    :root { --sable:#F4E9D8; --noir:#111; --brun:#8A6A3A; }
-    body { background:var(--sable); color:var(--noir); font-family:Arial; margin:70px auto; max-width:780px; line-height:1.65; position:relative; }
-    body::before { content:""; position:fixed; top:0; left:40px; width:3px; height:100vh; background:var(--brun); opacity:0.25; }
-    h1,h2 { font-weight:normal; color:var(--brun); margin-top:40px; }
-    h1 { font-size:26px; }
-    h2 { font-size:22px; }
-    nav { display:flex; gap:22px; margin-bottom:40px; }
-    a { color:var(--brun); opacity:0.85; text-decoration:none; }
-    a:hover { opacity:1; text-decoration:underline; }
-
-     /* Style pour les titres non cliquables dans la liste Explorer */
-    p strong {
-      color: var(--brun);
-      opacity: 0.6;
-      font-weight: normal;
+    /* COULEURS */
+    :root {
+      --sable:#F4E9D8;
+      --noir:#111;
+      --brun:#8A6A3A;
     }
-    
-    .section { margin-bottom:40px; }
 
-    @media (max-width: 768px) {
+    /* STRUCTURE */
+    body {
+      background:var(--sable);
+      color:var(--noir);
+      font-family:Arial, sans-serif;
+      margin:70px auto;
+      max-width:780px;
+      line-height:1.65;
+      position:relative;
+      text-align:left;
+    }
 
-  nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 12px 18px;     /* vertical / horizontal */
-    margin-bottom: 24px;
-  }
+    body::before {
+      content:"";
+      position:fixed;
+      top:0;
+      left:40px;
+      width:3px;
+      height:100vh;
+      background:var(--brun);
+      opacity:0.25;
+    }
 
-  nav a {
-    white-space: nowrap;
-    font-size: 16px;
-  }
-}
+    /* TITRES */
+    h1, h2 {
+      font-weight:normal;
+      color:var(--brun);
+      margin-top:40px;
+    }
 
-    @media (max-width: 768px) {
-  .sceau-accueil {
-    display: none !important;
-  }
-}
+    h1 {
+      font-size:26px;
+      margin-bottom:16px;
+    }
 
-    @media (max-width: 768px) {
-  nav {
-    justify-content: center;
-  }
-}
+    h2 {
+      font-size:22px;
+      margin-bottom:14px;
+    }
 
-  h1 {
-    font-size: 22px !important;
-    margin-top: 20px !important;
-    margin-bottom: 12px !important;
-  }
+    /* TITRES NON CLIQUABLES DANS EXPLORER */
+    p strong {
+      color:var(--brun);
+      opacity:0.6;
+      font-weight:normal;
+    }
 
-  h2 {
-    font-size: 20px !important;
-    margin-top: 28px !important;
-    margin-bottom: 10px !important;
-  }
+    .section {
+      margin-bottom:40px;
+    }
 
-  p {
-    font-size: 16px !important;
-    margin-bottom: 10px !important;
-  }
+    /* MOBILE */
+    @media (max-width:768px) {
 
-  ul {
-    padding-left: 20px !important;
-    font-size: 16px !important;
-  }
+      body {
+        margin:0;
+        padding:20px;
+        max-width:100%;
+        text-align:left;
+      }
 
-  /* Réduction du motif */
-  .motif {
-    margin-bottom: 20px !important;
-    opacity: 0.25 !important;
-  }
+      body::before {
+        display:none;
+      }
 
-  .motif .chevron {
-    width: 14px !important;
-    height: 14px !important;
-    border-left: 2px solid #8A6A3A !important;
-    border-bottom: 2px solid #8A6A3A !important;
-  }
+      h1 {
+        font-size:22px;
+        margin-top:20px;
+        margin-bottom:12px;
+      }
 
-  .motif .line {
-    width: 2px !important;
-    height: 28px !important;
-  }
+      h2 {
+        font-size:20px;
+        margin-top:28px;
+        margin-bottom:10px;
+      }
 
-  /* Réduction du lien retour */
-  .retour {
-    font-size: 15px !important;
-    margin-top: 6px !important;
-  }
-}
-    
+      p {
+        font-size:16px;
+        margin-bottom:10px;
+      }
+
+      ul {
+        padding-left:20px;
+        font-size:16px;
+      }
+
+      /* Motif réduit */
+      .motif {
+        margin-bottom:20px;
+        opacity:0.25;
+      }
+
+      .motif .chevron {
+        width:14px;
+        height:14px;
+        border-left:2px solid #8A6A3A;
+        border-bottom:2px solid #8A6A3A;
+      }
+
+      .motif .line {
+        width:2px;
+        height:28px;
+      }
+
+      /* Lien retour */
+      .retour {
+        font-size:15px;
+        margin-top:6px;
+      }
+    }
   </style>
 </head>
 
@@ -150,4 +174,5 @@ Reconstruire les organes, réguler les tensions.
 </p>
 
 </body>
+</html>
 </html>
