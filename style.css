@@ -131,7 +131,7 @@ a:hover {
 
 .nav-hero {
   position: absolute;
-  bottom: 800px;
+  top: 10px;          /* place le menu en haut du bandeau */
   left: 50%;
   transform: translateX(-50%);
   display: flex;
