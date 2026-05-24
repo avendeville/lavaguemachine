@@ -70,3 +70,17 @@ nav a:hover {
     font-size: 18px;
   }
 }
+/* ALIGNEMENT GLOBAL PAR DÉFAUT SUR MOBILE : GAUCHE */
+@media (max-width: 768px) {
+  body {
+    text-align: left;
+  }
+}
+
+/* PAGES À TEXTE CENTRÉ SUR MOBILE */
+@media (max-width: 768px) {
+  body.accueil,
+  body.contact {
+    text-align: center;
+  }
+}
