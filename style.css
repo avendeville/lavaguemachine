@@ -19,6 +19,14 @@ h2 {
   margin-bottom: 14px;
 }
 
+.accueil-titre {
+  font-size: 18px;
+  font-weight: normal;
+  color: #8A6A3A; /* brun */
+  margin-top: 22px;
+  margin-bottom: 6px;
+}
+
 /* VERSION MOBILE */
 @media (max-width:768px) {
   body {
