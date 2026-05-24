@@ -165,7 +165,7 @@ a:hover {
   
   @media (max-width: 768px) {
   .nav-hero a {
-    font-size: 13px !important;   /* plus petit que 17px */
+    font-size: 12px !important;   /* plus petit que 17px */
     white-space: nowrap;
   }
 
