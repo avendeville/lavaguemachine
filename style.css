@@ -47,6 +47,7 @@ nav {
   margin-bottom: 40px;
   font-size: 1rem;
   letter-spacing: 0.03em;
+  justify-content: flex-start; /* AJOUT IMPORTANT */
 }
 
 nav a {
