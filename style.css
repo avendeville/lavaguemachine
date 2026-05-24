@@ -165,15 +165,20 @@ a:hover {
   }
 }
 @media (max-width: 768px) {
+
+  /* Empêche le menu du bandeau d'hériter du menu global */
   .nav-hero {
-    flex-wrap: nowrap;      /* empêche les retours à la ligne */
-    white-space: nowrap;    /* force tout sur une seule ligne */
-    gap: 6px;               /* réduit l'espace entre les liens */
-    top: 6px;               /* bien collé en haut du bandeau */
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    white-space: nowrap !important;
+    justify-content: center !important;
+    gap: 6px !important;
+    top: 6px !important;
   }
 
   .nav-hero a {
-    font-size: 13px !important;  /* écrase le 17px global */
-    padding: 0;                  /* évite que ça prenne trop de place */
+    font-size: 12px !important;
+    padding: 0 !important;
+    white-space: nowrap !important;
   }
 }
