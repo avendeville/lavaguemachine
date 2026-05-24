@@ -39,7 +39,7 @@ h2 {
     font-size:17px !important;
   }
 }
-/* --- PAGE D’ACCUEIL : TITRE DU LIVRE --- */
+/* --- TITRE DU LIVRE SUR LA PAGE D’ACCUEIL --- */
 
 .titre-livre {
   font-size: 26px;
@@ -60,10 +60,10 @@ h2 {
 @media (max-width: 768px) {
   .titre-livre {
     font-size: 24px;
-    font-weight: 700;   /* reste en gras */
+    font-weight: 700;
   }
   .sous-titre-livre {
     font-size: 17px;
-    font-weight: 400;   /* reste léger */
+    font-weight: 400;
   }
 }
