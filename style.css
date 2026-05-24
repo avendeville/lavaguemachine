@@ -8,7 +8,7 @@ body {
 
 /* TITRES — VERSION GLOBALE (desktop + mobile) */
 h1 {
-  font-size: 32px;
+  font-size: 26px;
   line-height: 1.25;
   margin-bottom: 16px;
 }
@@ -32,7 +32,7 @@ h2 {
   }
 
   h1 {
-    font-size:28px !important;
+    font-size:22px !important;
   }
 
   p, a {
