@@ -164,3 +164,15 @@ a:hover {
     max-height: 150px;
   }
 }
+@media (max-width: 768px) {
+  .nav-hero {
+    flex-wrap: nowrap;      /* empêche les retours à la ligne */
+    white-space: nowrap;    /* force tout sur une seule ligne */
+    gap: 6px;               /* espace réduit entre les liens */
+    top: 6px;               /* bien collé en haut du bandeau */
+  }
+
+  .nav-hero a {
+    font-size: 13px !important;  /* taille réduite pour tenir */
+  }
+}
