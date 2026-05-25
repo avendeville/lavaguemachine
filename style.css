@@ -214,3 +214,8 @@ a:hover {
     margin-top: -10px; /* remonte le menu */
   }
 }
+@media (max-width: 768px) {
+  .hero-container {
+    height: 180px; /* même hauteur que l’image mobile */
+  }
+}
