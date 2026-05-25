@@ -209,3 +209,8 @@ a:hover {
   pointer-events: none;
   z-index: 10; /* indispensable pour passer devant le menu */
 }
+@media (max-width: 768px) {
+  .nav-hero {
+    margin-top: -10px; /* remonte le menu */
+  }
+}
