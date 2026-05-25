@@ -150,7 +150,7 @@ a:hover {
 }
 
 .signature-site img {
-  width: 40px;      /* taille du symbole */
+  width: 120px;      /* taille du symbole */
   height: auto;
   opacity: 0.8;
 }
