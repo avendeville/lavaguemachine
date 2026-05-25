@@ -93,13 +93,14 @@ a:hover {
 ------------------------------------------- */
 
 .nav-hero {
-  position: static;
+  position: relative;   /* ← indispensable */
+  z-index: 20;          /* ← passe devant l’image */
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
   padding: 0.8rem 1rem;
   text-align: left;
-  align-items: center;  /* centrer les liens */
+  align-items: center;
 }
 
 .nav-hero a {
