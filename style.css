@@ -133,24 +133,23 @@ a:hover {
 }
 
 .nav-hero {
-  position: absolute;
-  top: 10px;          /* place le menu en haut du bandeau */
-  left: 50%;
-  transform: translateX(-50%);
+  position: static; /* libère le menu, il sort du bandeau */
   display: flex;
-  gap: 22px;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: 1.2rem 1rem;
+  text-align: left;
 }
 
 .nav-hero a {
-  color: #8A6A3A !important; /* brun doré */
-  text-shadow: 0 1px 3px rgba(255,255,255,0.6);
   text-decoration: none;
+  color: #8A6A3A;
+  font-size: 1rem;
   opacity: 0.9;
 }
 
 .nav-hero a:hover {
   opacity: 1;
-  text-decoration: underline;
 }
 
   @media (max-width:768px) {
@@ -163,39 +162,6 @@ a:hover {
   }
 }
   
-  @media (max-width: 768px) {
-  .nav-hero a {
-    font-size: 12px !important;   /* plus petit que 17px */
-    white-space: nowrap;
-  }
-
-  .nav-hero {
-    top: 6px;
-    gap: 8px;
-  }
-
-  .bandeau-hero {
-    max-height: 150px;
-  }
-}
-@media (max-width: 768px) {
-
-  /* Empêche le menu du bandeau d'hériter du menu global */
-  .nav-hero {
-    display: flex !important;
-    flex-wrap: nowrap !important;
-    white-space: nowrap !important;
-    justify-content: center !important;
-    gap: 6px !important;
-    top: 6px !important;
-  }
-
-  .nav-hero a {
-    font-size: 12px !important;
-    padding: 0 !important;
-    white-space: nowrap !important;
-  }
-}
 .nav-hero {
   display: flex;
   flex-direction: column;
