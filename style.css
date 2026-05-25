@@ -93,6 +93,7 @@ a:hover {
   gap: 0.4rem;
   padding: 0.8rem 1rem;
   text-align: left;
+  align-items: center;  /* centrer les liens */
 }
 
 .nav-hero a {
