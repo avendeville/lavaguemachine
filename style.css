@@ -184,3 +184,10 @@ a:hover {
     object-position: center 65%; /* encore un peu plus bas pour mobile */
   }
 }
+/* Taille globale du symbole (footer) */
+.signature-site img {
+  max-width: 150px;
+  display: block;
+  margin: 40px auto 20px;
+  opacity: 0.85;
+}
