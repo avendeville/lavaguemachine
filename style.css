@@ -186,22 +186,22 @@ a:hover {
 }
 /* --- HERO (bandeau d'accueil) --- */
 
-.hero {
+/* --- PHRASE SUR LE BANDEAU --- */
+
+.hero-container {
   position: relative;
-  height: 60vh; /* hauteur du bandeau */
-  display: flex;
-  justify-content: center;
-  align-items: flex-end; /* place le texte vers le bas */
-  padding-bottom: 10vh; /* remonte légèrement le texte */
-  text-align: center;
 }
 
 .hero-phrase {
-  font-size: 1.4rem; /* plus petit */
-  font-weight: 300;
+  position: absolute;
+  bottom: 15%; /* place la phrase aux 3/4 du bandeau */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.2rem; /* plus petit */
   font-style: italic;
   font-family: "Georgia", "Times New Roman", serif; /* manuscrit élégant */
-  opacity: 0.8; /* discret */
-  margin: 0;
-  letter-spacing: 0.5px;
+  opacity: 0.85; /* discret */
+  color: #111;
+  text-align: center;
+  pointer-events: none; /* ne gêne pas les clics */
 }
