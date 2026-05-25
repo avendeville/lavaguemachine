@@ -146,22 +146,27 @@ a:hover {
 }
 
 /* ------------------------------------------
-   SIGNATURE EN BAS DE PAGE (VERSION FUSIONNÉE)
+   SIGNATURE FIXÉE EN BAS D'ÉCRAN
 ------------------------------------------- */
 
 .signature-site {
-  margin-top: 40px;
-  padding: 20px 0;
+  position: fixed;
+  bottom: 20px;      /* distance du bas */
+  right: 20px;       /* distance du bord droit */
+  z-index: 9999;     /* toujours au-dessus du contenu */
+  padding: 0;
+  margin: 0;
   text-align: center;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .signature-site img {
-  max-width: 150px;
+  width: 60px;        /* taille adaptée mobile */
   height: auto;
   display: block;
-  margin: 40px auto 20px;
+  margin: 0;
   opacity: 0.85;
+  transition: opacity 0.2s ease;
 }
 
 .signature-site img:hover {
