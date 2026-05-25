@@ -26,7 +26,8 @@ h2 {
 /* Ajoute un espace entre le bandeau et le premier titre */
 .hero-container + h1 {
   margin-top: 24px;
-   }
+}
+
 .accueil-titre {
   font-size: 18px;
   font-weight: normal;
@@ -55,7 +56,7 @@ a:hover {
 }
 
 /* ------------------------------------------
-   BANDEAU
+   BANDEAU (VERSION FUSIONNÉE)
 ------------------------------------------- */
 
 .hero-container {
@@ -64,23 +65,31 @@ a:hover {
 
 .bandeau-hero {
   width: 100%;
-  max-height: 260px;
+  height: 240px;
   object-fit: cover;
+  object-position: center 60%;
   display: block;
   margin: 0 auto 24px;
   opacity: 0.95;
   border-radius: 4px;
 }
 
+/* Version mobile */
+@media (max-width: 768px) {
+  .bandeau-hero {
+    height: 180px;
+    object-position: center 65%;
+  }
+}
+
 /* ------------------------------------------
    MENU DU BANDEAU — VERSION MOBILE-FIRST
-   (désormais SOUS le bandeau)
 ------------------------------------------- */
 
 .nav-hero {
-  position: static;              /* libéré du bandeau */
+  position: static;
   display: flex;
-  flex-direction: column;        /* menu vertical */
+  flex-direction: column;
   gap: 0.4rem;
   padding: 0.8rem 1rem;
   text-align: left;
@@ -121,7 +130,6 @@ a:hover {
     font-size:15px;
   }
 
-  /* Menu du bandeau : identique, juste un peu resserré */
   .nav-hero {
     gap: 0.6rem;
     padding: 1rem 0.5rem;
@@ -130,20 +138,10 @@ a:hover {
   .nav-hero a {
     font-size: 14px;
   }
-
-  .bandeau-hero {
-    max-height: 150px;
-  }
-
-  /* Pages centrées */
-  body.accueil,
-  body.contact {
-    text-align: center;
-  }
 }
 
 /* ------------------------------------------
-   SIGNATURE EN BAS DE PAGE
+   SIGNATURE EN BAS DE PAGE (VERSION FUSIONNÉE)
 ------------------------------------------- */
 
 .signature-site {
@@ -154,41 +152,13 @@ a:hover {
 }
 
 .signature-site img {
-  width: 120px;      /* taille du symbole */
+  max-width: 150px;
   height: auto;
-  opacity: 0.8;
+  display: block;
+  margin: 40px auto 20px;
+  opacity: 0.85;
 }
 
 .signature-site img:hover {
   opacity: 1;
-}
-
-/* ------------------------------------------
-   BANDEAU OPTIMISÉ — RECADRAGE + HAUTEUR
-------------------------------------------- */
-
-.bandeau-hero {
-  width: 100%;
-  height: 240px;              /* hauteur idéale desktop */
-  object-fit: cover;          /* recadrage propre */
-  object-position: center 60%;/* descend légèrement le cadrage */
-  display: block;
-  margin: 0 auto 6px;
-  opacity: 0.95;
-  border-radius: 4px;
-}
-
-/* Version mobile */
-@media (max-width: 768px) {
-  .bandeau-hero {
-    height: 180px;            /* hauteur idéale mobile */
-    object-position: center 65%; /* encore un peu plus bas pour mobile */
-  }
-}
-/* Taille globale du symbole (footer) */
-.signature-site img {
-  max-width: 150px;
-  display: block;
-  margin: 40px auto 20px;
-  opacity: 0.85;
 }
