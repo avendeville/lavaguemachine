@@ -1,12 +1,16 @@
-/* STYLE GLOBAL DU SITE */
+/* ------------------------------------------
+   STYLE GLOBAL DU SITE
+------------------------------------------- */
+
 body {
   background:#F4E9D8;
   color:#111;
   font-family:Arial;
   line-height:1.65;
+  text-align:left;
 }
 
-/* TITRES — VERSION GLOBALE (desktop + mobile) */
+/* TITRES */
 h1 {
   font-size: 22px;
   line-height: 1.25;
@@ -22,75 +26,19 @@ h2 {
 .accueil-titre {
   font-size: 18px;
   font-weight: normal;
-  color: #8A6A3A; /* brun */
+  color: #8A6A3A;
   margin-top: 18px;
   margin-bottom: 0;
 }
+
 .accueil-titre + p {
-  margin-top: 4px; /* réduit l'espace juste après le titre */
+  margin-top: 4px;
 }
 
-/* VERSION MOBILE */
-@media (max-width:768px) {
-  body {
-    margin:0 !important;
-    padding:20px !important;
-    max-width:100% !important;
-  }
+/* ------------------------------------------
+   LIENS GLOBAUX
+------------------------------------------- */
 
-  body::before {
-    display:none !important;
-  }
-
-  h1 {
-    font-size:22px !important;
-  }
-
-  p {
-  font-size:17px !important;
-}
-
-a {
-  font-size: inherit; /* ou rien du tout */
-}
-/* --- MENU GLOBAL HARMONISÉ POUR TOUTES LES PAGES --- */
-
-nav {
-  display: flex;
-  gap: 22px;
-  margin-bottom: 40px;
-  font-size: 1rem;
-  letter-spacing: 0.03em;
-  justify-content: flex-start; /* AJOUT IMPORTANT */
-}
-
-nav a {
-  color: #8A6A3A;
-  text-decoration: none;
-  opacity: 0.85;
-  white-space: nowrap; /* empêche les coupures */
-}
-
-nav a:hover {
-  opacity: 1;
-  text-decoration: underline;
-}
-
-/* Version mobile */
-@media (max-width: 768px) {
-  nav {
-    flex-wrap: wrap;
-    gap: 4px 10px;
-    justify-content: center;
-    font-size: 18px;
-     }
-
-  nav a {
-    white-space: nowrap;
-  }
-}
-
-/* STYLE GLOBAL POUR TOUS LES LIENS DU CONTENU */
 a {
   color: #8A6A3A;
   text-decoration: none;
@@ -102,21 +50,9 @@ a:hover {
   text-decoration: underline;
 }
 
-/* ALIGNEMENT GLOBAL PAR DÉFAUT SUR MOBILE : GAUCHE */
-@media (max-width: 768px) {
-  body {
-    text-align: left;
-  }
-}
-
-/* PAGES À TEXTE CENTRÉ SUR MOBILE */
-@media (max-width: 768px) {
-  body.accueil,
-  body.contact {
-    text-align: center;
-  }
-}
-/* --- BANDEAU AVEC MENU PAR-DESSUS --- */
+/* ------------------------------------------
+   BANDEAU
+------------------------------------------- */
 
 .hero-container {
   position: relative;
@@ -132,18 +68,23 @@ a:hover {
   border-radius: 4px;
 }
 
+/* ------------------------------------------
+   MENU DU BANDEAU — VERSION MOBILE-FIRST
+   (désormais SOUS le bandeau)
+------------------------------------------- */
+
 .nav-hero {
-  position: static; /* libère le menu, il sort du bandeau */
+  position: static;              /* libéré du bandeau */
   display: flex;
-  flex-direction: column;
+  flex-direction: column;        /* menu vertical */
   gap: 0.8rem;
   padding: 1.2rem 1rem;
   text-align: left;
 }
 
 .nav-hero a {
-  text-decoration: none;
   color: #8A6A3A;
+  text-decoration: none;
   font-size: 1rem;
   opacity: 0.9;
 }
@@ -152,30 +93,47 @@ a:hover {
   opacity: 1;
 }
 
-  @media (max-width:768px) {
+/* ------------------------------------------
+   VERSION MOBILE
+------------------------------------------- */
+
+@media (max-width:768px) {
+
+  body {
+    margin:0 !important;
+    padding:20px !important;
+    max-width:100% !important;
+  }
+
+  h1 {
+    font-size:22px !important;
+  }
+
   p {
     font-size:17px !important;
   }
 
   a {
-    font-size:16px; /* taille normale pour les liens du contenu */
+    font-size:16px;
   }
-}
-  
-.nav-hero {
-  display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
-  padding: 1.2rem 1rem;
-  text-align: left;
-}
 
-.nav-hero a {
-  text-decoration: none;
-  color: inherit;
-  font-size: 1rem;
-}
+  /* Menu du bandeau : identique, juste un peu resserré */
+  .nav-hero {
+    gap: 0.6rem;
+    padding: 1rem 0.5rem;
+  }
 
-.nav-hero a:hover {
-  opacity: 0.7;
+  .nav-hero a {
+    font-size: 14px;
+  }
+
+  .bandeau-hero {
+    max-height: 150px;
+  }
+
+  /* Pages centrées */
+  body.accueil,
+  body.contact {
+    text-align: center;
+  }
 }
