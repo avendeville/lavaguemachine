@@ -137,3 +137,24 @@ a:hover {
     text-align: center;
   }
 }
+
+/* ------------------------------------------
+   SIGNATURE EN BAS DE PAGE
+------------------------------------------- */
+
+.signature-site {
+  margin-top: 40px;
+  padding: 20px 0;
+  text-align: center;
+  opacity: 0.8;
+}
+
+.signature-site img {
+  width: 40px;      /* taille du symbole */
+  height: auto;
+  opacity: 0.8;
+}
+
+.signature-site img:hover {
+  opacity: 1;
+}
