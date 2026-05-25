@@ -63,7 +63,7 @@ a:hover {
   max-height: 260px;
   object-fit: cover;
   display: block;
-  margin: 0 auto 30px;
+  margin: 0 auto 6px;
   opacity: 0.95;
   border-radius: 4px;
 }
