@@ -155,14 +155,14 @@ a:hover {
   left: 50%;
   transform: translateX(-50%);
   z-index: 9999;
+  width: auto;          /* important : évite les décalages */
   padding: 0;
   margin: 0;
   text-align: center;
-  opacity: 0.9;
 }
 
 .signature-site img {
-  width: 60px;      /* taille mobile */
+  width: 60px;          /* taille mobile */
   height: auto;
   display: block;
   margin: 0 auto;
@@ -179,6 +179,6 @@ a:hover {
 ------------------------------------------- */
 @media (min-width: 900px) {
   .signature-site img {
-    width: 110px;   /* taille desktop plus visible */
+    width: 110px;       /* taille desktop */
   }
 }
