@@ -158,3 +158,26 @@ a:hover {
 .signature-site img:hover {
   opacity: 1;
 }
+
+/* ------------------------------------------
+   BANDEAU OPTIMISÉ — RECADRAGE + HAUTEUR
+------------------------------------------- */
+
+.bandeau-hero {
+  width: 100%;
+  height: 240px;              /* hauteur idéale desktop */
+  object-fit: cover;          /* recadrage propre */
+  object-position: center 60%;/* descend légèrement le cadrage */
+  display: block;
+  margin: 0 auto 6px;
+  opacity: 0.95;
+  border-radius: 4px;
+}
+
+/* Version mobile */
+@media (max-width: 768px) {
+  .bandeau-hero {
+    height: 180px;            /* hauteur idéale mobile */
+    object-position: center 65%; /* encore un peu plus bas pour mobile */
+  }
+}
