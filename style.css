@@ -146,7 +146,7 @@ a:hover {
 }
 
 /* ------------------------------------------
-   SIGNATURE FIXÉE EN BAS-CENTRE
+   SIGNATURE FIXÉE EN BAS-CENTRE (VERSION ROBUSTE)
 ------------------------------------------- */
 
 .signature-site {
@@ -155,14 +155,18 @@ a:hover {
   left: 50%;
   transform: translateX(-50%);
   z-index: 9999;
-  width: auto;          /* important : évite les décalages */
-  padding: 0;
-  margin: 0;
+
+  /* Ajouts essentiels pour corriger ton problème */
+  width: auto;
+  max-width: none;
+  right: auto;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .signature-site img {
-  width: 60px;          /* taille mobile */
+  width: 60px;      /* mobile */
   height: auto;
   display: block;
   margin: 0 auto;
@@ -174,11 +178,9 @@ a:hover {
   opacity: 1;
 }
 
-/* ------------------------------------------
-   VERSION DESKTOP : agrandir le symbole
-------------------------------------------- */
+/* Desktop */
 @media (min-width: 900px) {
   .signature-site img {
-    width: 110px;       /* taille desktop */
+    width: 110px;
   }
 }
