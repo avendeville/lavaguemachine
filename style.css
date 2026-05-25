@@ -196,7 +196,7 @@ a:hover {
 
 .hero-phrase {
   position: absolute;
-  bottom: 15%; /* place la phrase aux 3/4 du bandeau */
+  bottom: 30%; /* place la phrase aux 3/4 du bandeau */
   left: 50%;
   transform: translateX(-50%);
   font-size: 1.2rem;
