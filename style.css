@@ -185,7 +185,7 @@ a:hover {
   }
 }
 
-/* --- PHRASE SUR LE BANDEAU --- */
+/* --- PHRASE SUR LE BANDEAU (VERSION CORRECTE) --- */
 
 .hero-container {
   position: relative;
@@ -196,11 +196,12 @@ a:hover {
   bottom: 15%; /* place la phrase aux 3/4 du bandeau */
   left: 50%;
   transform: translateX(-50%);
-  font-size: 1.2rem; /* plus petit */
+  font-size: 1.2rem;
   font-style: italic;
-  font-family: "Georgia", "Times New Roman", serif; /* manuscrit élégant */
-  opacity: 0.85; /* discret */
+  font-family: "Georgia", "Times New Roman", serif;
+  opacity: 0.85;
   color: #111;
   text-align: center;
-  pointer-events: none; /* ne gêne pas les clics */
+  pointer-events: none;
+  z-index: 10; /* indispensable pour passer devant le menu */
 }
