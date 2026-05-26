@@ -102,6 +102,7 @@ a:hover {
     min-height: 140px;
     height: auto;
     position: relative;
+    margin-bottom: -80px; /* remonte le texte sous l’image */
   }
 
   .bandeau-hero {
@@ -121,14 +122,15 @@ a:hover {
     font-size: 12px;
   }
 
-   .nav-hero {
+  .nav-hero {
     margin-top: -20px;
   }
-   
+
   #sec1 {
     margin-top: -120px !important;
   }
-}
+
+} /* ← FIN DU MEDIA QUERY — NE RIEN METTRE APRÈS */
 
 /* ------------------------------------------
    MENU DU BANDEAU — VERSION MOBILE-FIRST
