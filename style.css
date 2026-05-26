@@ -212,6 +212,11 @@ a:hover {
   opacity: 1;
 }
 
+/* Masquer aussi la signature fixe sur la page d'accueil */
+body.home .signature-site {
+  display: none !important;
+}
+
 /* Desktop */
 @media (min-width: 900px) {
   .signature-site img {
@@ -227,8 +232,4 @@ a:hover {
     color: #ffffff;
      text-shadow: 0 2px 4px rgba(0,0,0,0.35);
   }
-}
-/* Masquer la signature uniquement sur la page d'accueil */
-body.home .signature-site {
-  display: none !important;
 }
