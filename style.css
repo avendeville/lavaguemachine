@@ -70,8 +70,17 @@ a:hover {
 
 @media (max-width: 768px) {
   .hero-container {
-    height: 180px;
+    height: 140px;
      text-align: center;
+     }
+  .bandeau-hero {
+    height: 140px;
+  object-fit: contain;
+    object-position: center;
+  }
+
+  .nav-hero {
+    margin-top: -20px;
   }
 }
 
@@ -109,14 +118,6 @@ a:hover {
   border-radius: 4px;
   z-index: 1;
   position: relative;      /* ← très important : plus d’absolu */
-}
-
-/* Version mobile */
-@media (max-width: 768px) {
-  .bandeau-hero {
-    height: 180px;
-    object-position: center; /* pas de décalage */
-  }
 }
 
 /* ------------------------------------------
@@ -178,7 +179,11 @@ a:hover {
     font-size: 14px;
   }
 }
-
+@media (max-width: 768px) {
+  .nav-hero {
+    margin-top: -10px; /* remonte légèrement */
+  }
+}
 /* ------------------------------------------
    SIGNATURE FIXÉE EN BAS-CENTRE (VERSION ROBUSTE)
 ------------------------------------------- */
