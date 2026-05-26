@@ -91,7 +91,7 @@ a:hover {
 
 @media (max-width: 768px) {
   .hero-citation {
-    top: 15%;                 /* remonte vraiment */
+    top: 25%;                 /* remonte vraiment */
     left: 50%;
     transform: translateX(-50%); /* supprime le translateY */
     font-size: 16px;          /* plus petit sur mobile */
@@ -226,7 +226,7 @@ body.home .signature-site {
 }
 @media (max-width: 768px) {
   .hero-citation {
-    top: 12%;
+    top: 25%;
     left: 50%;
     transform: translateX(-50%) !important; /* efface totalement le translateY */
     font-size: 16px;
