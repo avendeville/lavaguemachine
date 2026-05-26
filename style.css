@@ -212,7 +212,8 @@ a:hover {
   opacity: 1;
 }
 
-/* Masquer aussi la signature fixe sur la page d'accueil */
+/* Masquer le symbole d'accueil sur la page d'accueil (desktop + mobile) */
+body.home .sceau-accueil,
 body.home .signature-site {
   display: none !important;
 }
