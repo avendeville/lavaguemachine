@@ -228,3 +228,7 @@ a:hover {
      text-shadow: 0 2px 4px rgba(0,0,0,0.35);
   }
 }
+/* Masquer la signature uniquement sur la page d'accueil */
+body.home .signature-site {
+  display: none !important;
+}
