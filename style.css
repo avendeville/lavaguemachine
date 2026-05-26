@@ -80,7 +80,7 @@ a:hover {
   top: 25%; /* ← 3/4 de la hauteur */
   left: 50%;
   transform: translate(-50%, -50%);
-  color: color: #ffffff;
+  color: #ffffff;
   text-shadow: 0 2px 4px rgba(0,0,0,0.35);
   font-size: 18px;
   font-style: italic;
