@@ -68,23 +68,21 @@ a:hover {
 }
 
 .bandeau-hero {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 240px;
-  object-fit: cover;
-  object-position: center 60%;
+  object-fit: cover;      /* garde un rendu propre */
+  object-position: center; /* recentre l’image */
   opacity: 0.95;
   border-radius: 4px;
   z-index: 1;
+  position: relative;      /* ← très important : plus d’absolu */
 }
 
 /* Version mobile */
 @media (max-width: 768px) {
   .bandeau-hero {
     height: 180px;
-    object-position: center 65%;
+    object-position: center; /* pas de décalage */
   }
 }
 
@@ -185,37 +183,5 @@ a:hover {
 @media (min-width: 900px) {
   .signature-site img {
     width: 110px;
-  }
-}
-
-/* --- PHRASE SUR LE BANDEAU (VERSION CORRECTE) --- */
-
-.hero-container {
-  position: relative;
-   height: 240px; /* même hauteur que ton image */
-}
-
-.hero-phrase {
-  position: absolute;
-  bottom: 50%; /* place la phrase aux 3/4 du bandeau */
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 1.2rem;
-  font-style: italic;
-  font-family: "Georgia", "Times New Roman", serif;
-  opacity: 0.85;
-  color: #111;
-  text-align: center;
-  pointer-events: none;
-  z-index: 10; /* indispensable pour passer devant le menu */
-}
-@media (max-width: 768px) {
-  .nav-hero {
-    margin-top: -10px; /* remonte le menu */
-  }
-}
-@media (max-width: 768px) {
-  .hero-container {
-    height: 180px; /* même hauteur que l’image mobile */
   }
 }
