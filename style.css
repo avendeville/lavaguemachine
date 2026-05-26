@@ -248,7 +248,7 @@ body.home .signature-site {
     top: 25%;
     left: 50%;
     transform: translateX(-50%) !important; /* efface totalement le translateY */
-    font-size: 16px;
+    font-size: 10px !important;
     color: #ffffff;
      text-shadow: 0 2px 4px rgba(0,0,0,0.35);
   }
