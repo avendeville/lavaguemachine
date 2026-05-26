@@ -71,6 +71,7 @@ a:hover {
 @media (max-width: 768px) {
   .hero-container {
     height: 180px;
+     text-align: center;
   }
 }
 
