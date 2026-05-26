@@ -121,6 +121,10 @@ a:hover {
     font-size: 12px;
   }
 
+   .nav-hero {
+    margin-top: -20px;
+  }
+   
   #sec1 {
     margin-top: -120px !important;
   }
