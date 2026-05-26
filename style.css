@@ -80,8 +80,8 @@ a:hover {
   top: 25%; /* ← 3/4 de la hauteur */
   left: 50%;
   transform: translate(-50%, -50%);
-  color: rgba(255, 255, 255, 0.9);
-  text-shadow: 0 1px 3px rgba(0,0,0,0.25);
+  color: color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.35);
   font-size: 18px;
   font-style: italic;
   text-shadow: 0 2px 4px rgba(0,0,0,0.35);
@@ -95,7 +95,7 @@ a:hover {
     left: 50%;
     transform: translateX(-50%); /* supprime le translateY */
     font-size: 16px;          /* plus petit sur mobile */
-    color: rgba(255, 255, 255, 0.9); /* force le blanc doux */
+    color: #ffffff;
     text-shadow: 0 2px 4px rgba(0,0,0,0.35);
   }
 }
