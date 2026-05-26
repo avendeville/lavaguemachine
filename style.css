@@ -118,11 +118,11 @@ a:hover {
   .hero-citation {
     top: 30%;
     transform: translate(-50%, -50%);
-    font-size: 14px;
+    font-size: 12px;
   }
 
   #sec1 {
-    margin-top: -20px;   /* remonte le texte sous l’image */
+    margin-top: -354px;   /* remonte le texte sous l’image */
   }
 }
 
