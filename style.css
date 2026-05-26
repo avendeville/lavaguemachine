@@ -91,7 +91,7 @@ a:hover {
 
 @media (max-width: 768px) {
   .hero-citation {
-    top: 25%;                 /* remonte vraiment */
+    top: 15%;                 /* remonte vraiment */
     left: 50%;
     transform: translateX(-50%); /* supprime le translateY */
     font-size: 16px;          /* plus petit sur mobile */
