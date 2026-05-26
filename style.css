@@ -28,7 +28,7 @@ p {
 }
 
 /* Ajoute un espace entre le bandeau et le premier titre */
-.hero-container + h1 {
+.hero-container + * {
   margin-top: 24px;
 }
 
