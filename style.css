@@ -77,11 +77,11 @@ a:hover {
 
 .hero-citation {
   position: absolute;
-  top: 75%; /* ← 3/4 de la hauteur */
+  top: 55%; /* ← 3/4 de la hauteur */
   left: 50%;
   transform: translate(-50%, -50%);
   color: var(--brun);
-  font-size: 26px;
+  font-size: 20px;
   font-style: italic;
   text-shadow: 0 1px 3px rgba(0,0,0,0.25);
   white-space: nowrap;
