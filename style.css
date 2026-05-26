@@ -102,7 +102,7 @@ a:hover {
     min-height: 140px;
     height: auto;
     position: relative;
-    margin-bottom: -40px; /* remonte le texte sous l’image */
+    margin-bottom: -40px !important; /* remonte le texte sous l’image */
   }
 
   .bandeau-hero {
