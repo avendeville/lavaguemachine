@@ -77,12 +77,12 @@ a:hover {
 
 .hero-citation {
   position: absolute;
-  top: 55%; /* ← 3/4 de la hauteur */
+  top: 25%; /* ← 3/4 de la hauteur */
   left: 50%;
   transform: translate(-50%, -50%);
   color: rgba(255, 255, 255, 0.9);
   text-shadow: 0 1px 3px rgba(0,0,0,0.25);
-  font-size: 20px;
+  font-size: 18px;
   font-style: italic;
   text-shadow: 0 1px 3px rgba(0,0,0,0.25);
   white-space: nowrap;
@@ -91,7 +91,7 @@ a:hover {
 
 @media (max-width: 768px) {
   .hero-citation {
-    font-size: 20px;
+    font-size: 16px;
     top: 70%;
   }
 }
