@@ -65,6 +65,13 @@ a:hover {
 
 .hero-container {
   position: relative;
+    height: 240px; /* ← indispensable */
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    height: 180px;
+  }
 }
 
 .bandeau-hero {
