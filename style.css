@@ -99,7 +99,7 @@ a:hover {
 @media (max-width: 768px) {
 
   .hero-container {
-    min-height: 120px;
+    min-height: 140px;
     height: auto;
     position: relative;
   }
@@ -107,6 +107,7 @@ a:hover {
   .bandeau-hero {
     width: 100%;
     height: auto;
+    min-height: 120px;
     max-height: 140px;
     object-fit: contain;
     object-position: center;
@@ -115,13 +116,13 @@ a:hover {
   }
 
   .hero-citation {
-    top: 50%;
+    top: 30%;
     transform: translate(-50%, -50%);
-    font-size: 16px;
+    font-size: 14px;
   }
 
-  .nav-hero {
-    margin-top: -20px;
+  #sec1 {
+    margin-top: -20px;   /* remonte le texte sous l’image */
   }
 }
 
