@@ -65,59 +65,64 @@ a:hover {
 
 .hero-container {
   position: relative;
-    height: 180px; /* ← indispensable */
+  height: 180px; /* desktop */
 }
 
-@media (max-width: 768px) {
-  .hero-container {
-    height: 140px;
-     text-align: center;
-     }
-  .bandeau-hero {
-    height: 140px;
+.bandeau-hero {
+  width: 100%;
+  height: 180px;
   object-fit: contain;
-    object-position: center;
-  }
-
-  .nav-hero {
-    margin-top: -20px;
-  }
+  object-position: center;
+  opacity: 0.95;
+  border-radius: 4px;
+  z-index: 1;
+  position: relative;
 }
 
 .hero-citation {
   position: absolute;
-  top: 25%; /* ← 3/4 de la hauteur */
+  top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #ffffff;
   text-shadow: 0 2px 4px rgba(0,0,0,0.35);
   font-size: 18px;
   font-style: italic;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.35);
   white-space: nowrap;
-  z-index: 2; /* ← passe devant l’image */
+  z-index: 2;
 }
+
+/* ------------------------------------------
+   VERSION MOBILE
+------------------------------------------- */
 
 @media (max-width: 768px) {
-  .hero-citation {
-    top: 25%;                 /* remonte vraiment */
-    left: 50%;
-    transform: translateX(-50%); /* supprime le translateY */
-    font-size: 16px;          /* plus petit sur mobile */
-    color: #ffffff;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.35);
-  }
-}
 
-.bandeau-hero {
-  width: 100%;
-  height: 180px;
-  object-fit: contain;      /* garde un rendu propre */
-  object-position: center; /* recentre l’image */
-  opacity: 0.95;
-  border-radius: 4px;
-  z-index: 1;
-  position: relative;      /* ← très important : plus d’absolu */
+  .hero-container {
+    min-height: 120px;
+    height: auto;
+    position: relative;
+  }
+
+  .bandeau-hero {
+    width: 100%;
+    height: auto;
+    max-height: 140px;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .hero-citation {
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+  }
+
+  .nav-hero {
+    margin-top: -20px;
+  }
 }
 
 /* ------------------------------------------
