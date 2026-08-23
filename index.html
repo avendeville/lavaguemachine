@@ -5,21 +5,19 @@
   <meta name="robots" content="index, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Agnès Vendeville — Autrice — Surfer la Vague Machine</title>
+  <title>La Vague Machine — Triptyque institutionnel</title>
 
-  <meta name="description" content="Agnès Vendeville — Autrice. Surfer la Vague Machine : essai narratif d’une institution qui déraille. Une écriture incarnée, tendue, lucide.">
+  <meta name="description" content="La Vague Machine — Triptyque institutionnel. Lire les institutions comme des systèmes vivants.">
 
   <link rel="stylesheet" href="style.css">
-  
+
   <style>
-    /* --- COULEURS --- */
     :root {
       --sable: #F4E9D8;
       --noir: #111111;
       --brun: #8A6A3A;
     }
 
-    /* --- STRUCTURE GLOBALE --- */
     body {
       background-color: var(--sable);
       color: var(--noir);
@@ -27,41 +25,32 @@
       margin: 40px auto;
       max-width: 780px;
       line-height: 1.65;
-      position: relative;
     }
 
-    /* --- TITRES GÉNÉRAUX --- */
-    h1, h2 {
-  font-weight: normal;
-  color: #8A6A3A;
-}
-    
-/* Remonter le titre principal */
-h1 {
-  margin-top: 40px;
-  font-size: 26px;
-  margin-bottom: 10px;
-}
-
-/* Laisser les h2 comme avant */
-h2 {
-  font-size: 22px;
-  margin-top: 30px;   /* optionnel : un peu d’air */
-  margin-bottom: 12px;
-}
-
-    h1 .sous-titre {
-      font-size: 20px;
+    h1, h2, h3 {
       font-weight: normal;
-      opacity: 0.85;
-      letter-spacing: 0.5px;
-      display: inline-block;   /* indispensable pour que le margin fonctionne */
-  margin-top: 6px;         /* espace entre le nom et “Autrice” */
+      color: var(--brun);
     }
 
-    /* --- LIENS --- */
+    h1 {
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 22px;
+      margin-top: 30px;
+      margin-bottom: 12px;
+    }
+
+    h3 {
+      font-size: 20px;
+      margin-top: 20px;
+      margin-bottom: 6px;
+    }
+
     a {
-      color: #8A6A3A;
+      color: var(--brun);
       text-decoration: none;
       opacity: 0.85;
     }
@@ -71,7 +60,6 @@ h2 {
       text-decoration: underline;
     }
 
-    /* --- MENU --- */
     nav {
       display: flex;
       gap: 22px;
@@ -80,34 +68,14 @@ h2 {
       letter-spacing: 0.03em;
     }
 
-    /* --- SECTIONS --- */
-    .section {
-      margin-bottom: 40px;
-    }
-
-    /* --- BLOC LIVRE (ACCUEIL) --- */
-    .decouvrir-lien {
-      color: #000;
-      font-weight: 500;
+    footer {
+      margin-top: 60px;
       font-size: 0.9rem;
+      opacity: 0.75;
+      text-align: left;
+      color: var(--brun);
     }
 
-    .titre-livre {
-  font-size: 22px;      /* plus petit */
-  font-weight: normal;  /* pas en gras */
-  color: #8A6A3A;
-  margin: 6px 0 2px 0;
-}
-
-    .sous-titre-livre {
-      font-size: 18px;
-      font-weight: 400;
-      color: #8A6A3A;
-      opacity: 0.85;
-      margin: 0 0 10px 0;
-    }
-
-    /* --- MOBILE --- */
     @media (max-width: 768px) {
       body {
         margin: 0;
@@ -116,12 +84,7 @@ h2 {
         text-align: center;
       }
 
-      body::before {
-        display: none;
-      }
-
       nav {
-        display: flex;
         flex-wrap: wrap;
         gap: 4px 10px;
         justify-content: center;
@@ -132,65 +95,47 @@ h2 {
         white-space: nowrap;
       }
 
-      body.home .sceau-accueil {
-  display: none !important;
-}
-
-      .titre-livre {
-        font-size: 24px;
-      }
-      
-      h1 {
-    font-weight: normal !important;
-  }
-      .sous-titre-livre {
-        font-size: 17px;
-      }
-
       p, a, strong {
         font-size: 17px;
         line-height: 1.55;
       }
-    }    
+    }
   </style>
 </head>
+
 <body class="home">
 
 <div class="hero-container">
   <img src="imagebandeau-mer.jpg" alt="Mer calme avec voilier et cargo à l’horizon" class="bandeau-hero">
-
   <div class="hero-citation">Penser l’horizon dans la clarté</div>
 </div>
 
 <nav class="nav-hero">
-  <a href="livre.html">Le livre</a>
+  <a href="livre.html">Livre I</a>
+  <a href="livre2.html">Livre II</a>
+  <a href="livre3.html">Livre III</a>
   <a href="apropos.html">À propos</a>
-  <a href="vaguemachine.html">La Vague Machine</a>
+  <a href="vaguemachine.html">Concept</a>
   <a href="contact.html">Contact</a>
 </nav>
-  
-  <!-- IDENTITÉ AUTEURE -->
-  <h1>
-    Agnès Vendeville<br>
-    <span class="sous-titre">Autrice</span>
-  </h1>
-  
-  <!-- LIVRE -->
-  <section class="section">
 
-    <h2 class="titre-livre">
-      <a href="livre.html"><em>Surfer la Vague Machine</em></a>
-    </h2>
+<section class="section">
+  <h1>La Vague Machine — Triptyque institutionnel</h1>
+  <p><em>Lire les institutions comme des systèmes vivants.</em></p>
 
-    <h3 class="sous-titre-livre">
-      <a href="livre.html"><em>Tenir l'horizon quand l'institution dérive</em></a>
-    </h3>
+  <h2><a href="livre.html">Livre I — Le point de clarté</a></h2>
+  <p>Récit du réel — traversée institutionnelle</p>
 
-     <p>
-      La Vague-Machine<br>
-      Lire les institutions comme des systèmes vivants.
-    </p>
-    </section>
-  
+  <h2><a href="livre2.html">Livre II — La Vague Machine</a></h2>
+  <p>Mécanique institutionnelle — théorie du système</p>
+
+  <h2><a href="livre3.html">Livre III — Inventer les institutions</a></h2>
+  <p>Architecture — transformation</p>
+</section>
+
+<footer>
+  Agnès Vendeville — Autrice
+</footer>
+
 </body>
 </html>
