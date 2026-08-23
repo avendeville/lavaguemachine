@@ -6,9 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>La Vague Machine — Triptyque institutionnel</title>
-
   <meta name="description" content="La Vague Machine — Triptyque institutionnel. Lire les institutions comme des systèmes vivants.">
-
   <link rel="stylesheet" href="style.css">
 
   <style>
@@ -60,10 +58,12 @@
       text-decoration: underline;
     }
 
-    nav {
+    /* ⭐ MENU HORIZONTAL */
+    nav.nav-hero {
       display: flex;
+      justify-content: center; /* centré sous le bandeau */
       gap: 22px;
-      margin-bottom: 40px;
+      margin: 20px 0 40px 0;
       font-size: 1rem;
       letter-spacing: 0.03em;
     }
@@ -84,14 +84,14 @@
         text-align: center;
       }
 
-      nav {
+      nav.nav-hero {
         flex-wrap: wrap;
         gap: 4px 10px;
         justify-content: center;
         font-size: 18px;
       }
 
-      nav a {
+      nav.nav-hero a {
         white-space: nowrap;
       }
 
@@ -110,6 +110,7 @@
   <div class="hero-citation">Penser l’horizon dans la clarté</div>
 </div>
 
+<!-- ⭐ MENU HORIZONTAL -->
 <nav class="nav-hero">
   <a href="apropos.html">À propos</a>
   <a href="concept.html">Concept</a>
