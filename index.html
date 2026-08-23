@@ -60,13 +60,18 @@
 
     /* ⭐ MENU HORIZONTAL */
     nav.nav-hero {
-      display: flex;
-      justify-content: center; /* centré sous le bandeau */
-      gap: 22px;
-      margin: 20px 0 40px 0;
-      font-size: 1rem;
-      letter-spacing: 0.03em;
-    }
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center;
+  gap: 22px;
+  margin: 20px 0 40px 0;
+  font-size: 1rem;
+  letter-spacing: 0.03em;
+}
+
+nav.nav-hero a {
+  display: inline-block !important;
+}
 
     footer {
       margin-top: 60px;
