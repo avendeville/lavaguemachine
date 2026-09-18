@@ -21,6 +21,7 @@
             line-height: 1.65;
         }
 
+        /* TITRES EN BRUN */
         h1, h2 {
             font-weight: normal;
             color: var(--brun);
@@ -37,27 +38,23 @@
             margin-bottom: 12px;
         }
 
+        /* BANDEAU + LIENS EN MARRON PETITS */
         nav {
             display: flex;
             gap: 14px;
             justify-content: center;
             margin-bottom: 30px;
-            font-size: 18px;
+            font-size: 14px; /* petits liens */
         }
 
         nav a {
-            color: var(--noir);
+            color: var(--brun); /* marron */
             text-decoration: none;
             opacity: 0.85;
             white-space: nowrap;
         }
 
-        p a {
-            color: var(--brun);
-            text-decoration: none;
-            opacity: 0.85;
-        }
-
+        /* Mobile */
         @media (max-width: 768px) {
             nav {
                 flex-wrap: wrap;
