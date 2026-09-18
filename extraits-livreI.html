@@ -4,31 +4,91 @@
     <meta charset="UTF-8">
     <title>Extraits — Livre I</title>
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        :root {
+            --sable: #F4E9D8;
+            --noir: #111111;
+            --brun: #8A6A3A;
+        }
+
+        body {
+            background-color: var(--sable);
+            color: var(--noir);
+            font-family: Arial, sans-serif;
+            margin: 40px auto;
+            max-width: 780px;
+            line-height: 1.65;
+        }
+
+        h1, h2 {
+            font-weight: normal;
+            color: var(--brun);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 22px;
+            margin-bottom: 4px !important;
+        }
+
+        h2 {
+            font-size: 16px;
+            margin-bottom: 12px;
+        }
+
+        nav {
+            display: flex;
+            gap: 14px;
+            justify-content: center;
+            margin-bottom: 30px;
+            font-size: 18px;
+        }
+
+        nav a {
+            color: var(--noir);
+            text-decoration: none;
+            opacity: 0.85;
+            white-space: nowrap;
+        }
+
+        p a {
+            color: var(--brun);
+            text-decoration: none;
+            opacity: 0.85;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-wrap: wrap;
+                gap: 4px 10px;
+                justify-content: center;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-<header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="livreI.html">Livre I</a></li>
-            <li><a href="livreII.html">Livre II</a></li>
-            <li><a href="livreIII.html">Livre III</a></li>
-        </ul>
-    </nav>
-</header>
+<!-- BANDEAU + LIENS -->
+<nav>
+    <a href="index.html">Accueil</a>
+    <a href="livreI.html">Livre I</a>
+    <a href="livreII.html">Livre II</a>
+    <a href="livreIII.html">Livre III</a>
+    <a href="centres.html">Centres</a>
+</nav>
 
 <section class="livre">
 
-    <h1 style="text-align:center;">Extraits — Livre I</h1>
+    <h1>Extraits — Livre I</h1>
 
     <p style="text-align:center; opacity:0.7; font-size:0.9rem; margin-bottom:40px;">
         Fragments de la voix d’Athéna — œuvre de fiction.
     </p>
 
     <!-- Extrait 1 -->
-    <h2 style="text-align:center;">Extrait — Le point de clarté </h2>
+    <h2>Extrait — Le point de clarté</h2>
 
     <div style="text-align:center; margin: 20px 0;">
         <p style="color:var(--brun); font-size:0.9rem; display:inline-block; text-align:left; max-width:650px;">
@@ -50,7 +110,7 @@
     </div>
 
     <!-- Extrait 2 -->
-    <h2 style="text-align:center; margin-top:60px;">Extrait — L’écume </h2>
+    <h2 style="margin-top:60px;">Extrait — L’écume</h2>
 
     <div style="text-align:center; margin: 20px 0;">
         <p style="color:var(--brun); font-size:0.9rem; display:inline-block; text-align:left; max-width:650px;">
