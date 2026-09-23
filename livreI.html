@@ -65,29 +65,30 @@
 }
     
     /* Mobile : menu sur 2 lignes */
-    @media (max-width: 768px) {
-      nav {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 4px 10px;
-        font-size: 18px;
-        justify-content: center;
-      }
+@media (max-width: 768px) {
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 10px;
+    font-size: 18px;
+    justify-content: center;
+  }
 
-      nav a {
-        white-space: nowrap;
-      }
+  nav a {
+    white-space: nowrap;
+  }
 
-      .sceau-accueil {
-        display: none !important;
-      }
+  .sceau-accueil {
+    display: none !important;
+  }
+}
+
+/* Copyright : taille fixe sur mobile */
 @media (max-width: 768px) {
   .copyright {
     font-size: 10px !important;
   }
 }
-      
-    }
 
   </style>
 </head>
@@ -127,9 +128,9 @@ Lecture éditoriale — Éditions du Seuil : « intérêt indéniable »
   <a href="index.html">
     <img src="symbole-architectonique-institutionnelle.webp" alt="Retour à l’accueil">
   </a>
-  <p style="font-size:12px; opacity:0.7; margin-top:8px;">
-    © 2026 Agnès Vendeville — La Vague Machine. Tous droits réservés.
-  </p>
+  <p class="copyright">
+  © 2026 Agnès Vendeville — La Vague Machine. Tous droits réservés.
+</p>
 </footer>
 
 </body>
