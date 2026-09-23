@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>La Vague Machine — Livre III</title>
+  <title>La Vague Machine — Livre II</title>
   <link rel="stylesheet" href="style.css">
 
   <style>
@@ -33,23 +33,36 @@
       color: rgba(0,0,0,0.75);
     }
 
+    /* Bloc image : marge propre */
+    .bloc-image-livre {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    /* Footer desktop */
     footer.signature-site {
-  margin-top: 60px;      /* espace au-dessus du footer, desktop */
-  text-align: center;
-}
+      text-align: center;
+      margin-top: 60px;
+    }
 
-footer.signature-site img {
-  width: 80px;
-}
+    footer.signature-site img {
+      width: 80px;
+    }
 
-/* Mobile : footer reste bien sous l'image */
-@media (max-width: 768px) {
-  footer.signature-site {
-    margin-top: 50px !important;
-  }
-}
+    /* Footer mobile : reste SOUS l'image */
+    @media (max-width: 768px) {
+
+      .bloc-image-livre {
+        margin-bottom: 70px !important; /* espace sous l'image */
+      }
+
+      footer.signature-site {
+        margin-top: 40px !important; /* espace avant le footer */
+      }
+    }
   </style>
 </head>
+
 <body>
 
 <!-- Bloc titre -->
@@ -64,20 +77,19 @@ footer.signature-site img {
 </div>
 
 <!-- Image de couverture -->
-<div style="text-align:center; margin: 40px 0;">
+<div class="bloc-image-livre">
   <img src="image_livreII.png" alt="Couverture Livre II"
        style="width:280px; max-width:80%; height:auto;">
 </div>
 
-<footer class="signature-site" style="text-align:center; margin-top:40px;">
+<footer class="signature-site">
   <a href="index.html">
     <img src="symbole-architectonique-institutionnelle.webp" alt="Retour à l’accueil">
   </a>
-  <p style="font-size:12px; opacity:0.7; margin-top:8px;">
+  <p class="copyright">
     © 2026 Agnès Vendeville — La Vague Machine. Tous droits réservés.
   </p>
 </footer>
 
 </body>
 </html>
-
