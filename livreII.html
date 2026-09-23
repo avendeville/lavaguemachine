@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>La Vague Machine — Livre II</title>
+  <title>La Vague Machine — Livre III</title>
   <link rel="stylesheet" href="style.css">
 
   <style>
@@ -33,13 +33,20 @@
       color: rgba(0,0,0,0.75);
     }
 
+    /* Footer desktop */
     footer.signature-site img {
       width: 80px;
       margin-top: 60px;
     }
+
+    /* Footer mobile : reste SOUS l’image */
+    @media (max-width: 768px) {
+      footer.signature-site img {
+        margin-top: 40px !important;
+      }
+    }
   </style>
 </head>
-
 <body>
 
 <!-- Bloc titre -->
