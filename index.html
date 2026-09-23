@@ -141,7 +141,22 @@ nav.nav-hero a {
         font-size: 17px;
         line-height: 1.55;
       }
-    }
+
+/* h2 plus petit pour la phrase d'accroche */
+.h2-petit {
+  font-size: 14px;       /* plus petit que ton h2 normal (16px) */
+  font-weight: normal;
+  color: var(--brun);
+  margin-bottom: 12px;
+}
+
+/* Mobile : encore légèrement plus petit */
+@media (max-width: 768px) {
+  .h2-petit {
+    font-size: 13px !important;
+  }
+}
+      
   </style>
 </head>
 
@@ -172,7 +187,7 @@ nav.nav-hero a {
   </p>
 
   <!-- Sous-titre harmonisé -->
-  <h2 style="margin-top:10px;">
+  <h2 class="h2-petit" style="margin-top:10px;">
     Un concept qui éclaire la lecture des institutions
 </h2>
   
